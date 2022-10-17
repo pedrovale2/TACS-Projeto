@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated projeto_CV -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="projeto_CV.presentation.Projeto_CVModelWizardID"
+            name="%_UI_Projeto_CVModelWizard_label"
+            class="projeto_CV.presentation.Projeto_CVModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Projeto_CVModelFile.gif">
+         <description>%_UI_Projeto_CVModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated projeto_CV -->
+      <editor
+            id="projeto_CV.presentation.Projeto_CVEditorID"
+            name="%_UI_Projeto_CVEditor_label"
+            icon="icons/full/obj16/Projeto_CVModelFile.gif"
+            extensions="projeto_cv"
+            class="projeto_CV.presentation.Projeto_CVEditor"
+            contributorClass="projeto_CV.presentation.Projeto_CVActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
