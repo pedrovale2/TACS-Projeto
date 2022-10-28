@@ -10,55 +10,56 @@
     <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="CV">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="seccao" upperBound="-1"
-        eType="#//Seccao" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sections" upperBound="-1"
+        eType="#//Section" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Seccao">
+  <eClassifiers xsi:type="ecore:EClass" name="Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="diffNameSection"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="diffNameSection" value="Seccao.allInstances()->isUnique(nome)"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="seccao" upperBound="-1"
-        eType="#//Seccao" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="atributo" upperBound="-1"
-        eType="#//Atributo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sections" upperBound="-1"
+        eType="#//Section" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Atributo"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Informacao" eSuperTypes="#//Atributo">
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="titulo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Information" eSuperTypes="#//Attribute">
     <eStructuralFeatures xsi:type="ecore:EReference" name="supertype" eType="#//SuperType"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Tabela" eSuperTypes="#//Atributo">
+  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Attribute">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="constraints" value="sameSizeRows"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="sameSizeRows" value="self.body.row->forAll(r | r.supertype->size() = self.header.row.supertype->size())"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="titulo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="header" eType="#//HeadTabela"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="body" eType="#//Body" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" eType="#//BodyTable"
+        containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Body">
+  <eClassifiers xsi:type="ecore:EClass" name="BodyTable">
     <eStructuralFeatures xsi:type="ecore:EReference" name="row" lowerBound="1" upperBound="-1"
         eType="#//Row" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DataType" eSuperTypes="#//SuperType">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StringType" eSuperTypes="#//SuperType">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="str" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FloatType" eSuperTypes="#//SuperType">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="flt" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HeadTabela">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nome" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="row" lowerBound="1" eType="#//Row"
         containment="true"/>
   </eClassifiers>

@@ -10,37 +10,37 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Projeto_CV" disposableProviderFactory="true" ecorePackage="projeto_CV.ecore#/">
     <genClasses ecoreClass="projeto_CV.ecore#//CV">
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//CV/seccao"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//CV/sections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//CV/version"/>
     </genClasses>
-    <genClasses ecoreClass="projeto_CV.ecore#//Seccao">
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Seccao/seccao"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//Seccao/nome"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Seccao/atributo"/>
+    <genClasses ecoreClass="projeto_CV.ecore#//Section">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Section/sections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//Section/name"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Section/attributes"/>
     </genClasses>
-    <genClasses ecoreClass="projeto_CV.ecore#//Atributo"/>
-    <genClasses ecoreClass="projeto_CV.ecore#//Informacao">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//Informacao/titulo"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Informacao/supertype"/>
+    <genClasses ecoreClass="projeto_CV.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//Attribute/titulo"/>
     </genClasses>
-    <genClasses ecoreClass="projeto_CV.ecore#//Tabela">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//Tabela/titulo"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Tabela/header"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Tabela/body"/>
+    <genClasses ecoreClass="projeto_CV.ecore#//Information">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Information/supertype"/>
     </genClasses>
-    <genClasses ecoreClass="projeto_CV.ecore#//Body">
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Body/row"/>
+    <genClasses ecoreClass="projeto_CV.ecore#//Table">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Table/header"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//Table/body"/>
+    </genClasses>
+    <genClasses ecoreClass="projeto_CV.ecore#//BodyTable">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//BodyTable/row"/>
     </genClasses>
     <genClasses ecoreClass="projeto_CV.ecore#//DataType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//DataType/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//DataType/value"/>
     </genClasses>
     <genClasses ecoreClass="projeto_CV.ecore#//StringType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//StringType/str"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//StringType/value"/>
     </genClasses>
     <genClasses ecoreClass="projeto_CV.ecore#//FloatType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//FloatType/flt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//FloatType/value"/>
     </genClasses>
     <genClasses ecoreClass="projeto_CV.ecore#//HeadTabela">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute projeto_CV.ecore#//HeadTabela/nome"/>
       <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference projeto_CV.ecore#//HeadTabela/row"/>
     </genClasses>
     <genClasses ecoreClass="projeto_CV.ecore#//SuperType">
