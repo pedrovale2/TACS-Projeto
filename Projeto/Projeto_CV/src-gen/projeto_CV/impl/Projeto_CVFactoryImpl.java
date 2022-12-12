@@ -58,16 +58,16 @@ public class Projeto_CVFactoryImpl extends EFactoryImpl implements Projeto_CVFac
 		switch (eClass.getClassifierID()) {
 		case Projeto_CVPackage.CV:
 			return createCV();
-		case Projeto_CVPackage.SECCAO:
-			return createSeccao();
-		case Projeto_CVPackage.ATRIBUTO:
-			return createAtributo();
-		case Projeto_CVPackage.INFORMACAO:
-			return createInformacao();
-		case Projeto_CVPackage.TABELA:
-			return createTabela();
-		case Projeto_CVPackage.BODY:
-			return createBody();
+		case Projeto_CVPackage.SECTION:
+			return createSection();
+		case Projeto_CVPackage.ATTRIBUTE:
+			return createAttribute();
+		case Projeto_CVPackage.INFORMATION:
+			return createInformation();
+		case Projeto_CVPackage.TABLE:
+			return createTable();
+		case Projeto_CVPackage.BODY_TABLE:
+			return createBodyTable();
 		case Projeto_CVPackage.DATA_TYPE:
 			return createDataType();
 		case Projeto_CVPackage.STRING_TYPE:
@@ -100,9 +100,9 @@ public class Projeto_CVFactoryImpl extends EFactoryImpl implements Projeto_CVFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Seccao createSeccao() {
-		SeccaoImpl seccao = new SeccaoImpl();
-		return seccao;
+	public Section createSection() {
+		SectionImpl section = new SectionImpl();
+		return section;
 	}
 
 	/**
@@ -110,9 +110,9 @@ public class Projeto_CVFactoryImpl extends EFactoryImpl implements Projeto_CVFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Atributo createAtributo() {
-		AtributoImpl atributo = new AtributoImpl();
-		return atributo;
+	public Attribute createAttribute() {
+		AttributeImpl attribute = new AttributeImpl();
+		return attribute;
 	}
 
 	/**
@@ -120,9 +120,9 @@ public class Projeto_CVFactoryImpl extends EFactoryImpl implements Projeto_CVFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Informacao createInformacao() {
-		InformacaoImpl informacao = new InformacaoImpl();
-		return informacao;
+	public Information createInformation() {
+		InformationImpl information = new InformationImpl();
+		return information;
 	}
 
 	/**
@@ -130,9 +130,9 @@ public class Projeto_CVFactoryImpl extends EFactoryImpl implements Projeto_CVFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Tabela createTabela() {
-		TabelaImpl tabela = new TabelaImpl();
-		return tabela;
+	public Table createTable() {
+		TableImpl table = new TableImpl();
+		return table;
 	}
 
 	/**
@@ -140,9 +140,9 @@ public class Projeto_CVFactoryImpl extends EFactoryImpl implements Projeto_CVFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Body createBody() {
-		BodyImpl body = new BodyImpl();
-		return body;
+	public BodyTable createBodyTable() {
+		BodyTableImpl bodyTable = new BodyTableImpl();
+		return bodyTable;
 	}
 
 	/**

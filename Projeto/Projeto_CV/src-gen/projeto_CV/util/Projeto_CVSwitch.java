@@ -73,41 +73,41 @@ public class Projeto_CVSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Projeto_CVPackage.SECCAO: {
-			Seccao seccao = (Seccao) theEObject;
-			T result = caseSeccao(seccao);
+		case Projeto_CVPackage.SECTION: {
+			Section section = (Section) theEObject;
+			T result = caseSection(section);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Projeto_CVPackage.ATRIBUTO: {
-			Atributo atributo = (Atributo) theEObject;
-			T result = caseAtributo(atributo);
+		case Projeto_CVPackage.ATTRIBUTE: {
+			Attribute attribute = (Attribute) theEObject;
+			T result = caseAttribute(attribute);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Projeto_CVPackage.INFORMACAO: {
-			Informacao informacao = (Informacao) theEObject;
-			T result = caseInformacao(informacao);
+		case Projeto_CVPackage.INFORMATION: {
+			Information information = (Information) theEObject;
+			T result = caseInformation(information);
 			if (result == null)
-				result = caseAtributo(informacao);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case Projeto_CVPackage.TABELA: {
-			Tabela tabela = (Tabela) theEObject;
-			T result = caseTabela(tabela);
-			if (result == null)
-				result = caseAtributo(tabela);
+				result = caseAttribute(information);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case Projeto_CVPackage.BODY: {
-			Body body = (Body) theEObject;
-			T result = caseBody(body);
+		case Projeto_CVPackage.TABLE: {
+			Table table = (Table) theEObject;
+			T result = caseTable(table);
+			if (result == null)
+				result = caseAttribute(table);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case Projeto_CVPackage.BODY_TABLE: {
+			BodyTable bodyTable = (BodyTable) theEObject;
+			T result = caseBodyTable(bodyTable);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -181,77 +181,77 @@ public class Projeto_CVSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Seccao</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Seccao</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Section</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSeccao(Seccao object) {
+	public T caseSection(Section object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Atributo</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Attribute</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Atributo</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Attribute</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAtributo(Atributo object) {
+	public T caseAttribute(Attribute object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Informacao</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Information</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Informacao</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Information</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInformacao(Informacao object) {
+	public T caseInformation(Information object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Tabela</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Table</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Tabela</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Table</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTabela(Tabela object) {
+	public T caseTable(Table object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Body</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Body Table</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Body</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Body Table</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseBody(Body object) {
+	public T caseBodyTable(BodyTable object) {
 		return null;
 	}
 

@@ -31,49 +31,49 @@ public interface Projeto_CVFactory extends EFactory {
 	CV createCV();
 
 	/**
-	 * Returns a new object of class '<em>Seccao</em>'.
+	 * Returns a new object of class '<em>Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Seccao</em>'.
+	 * @return a new object of class '<em>Section</em>'.
 	 * @generated
 	 */
-	Seccao createSeccao();
+	Section createSection();
 
 	/**
-	 * Returns a new object of class '<em>Atributo</em>'.
+	 * Returns a new object of class '<em>Attribute</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Atributo</em>'.
+	 * @return a new object of class '<em>Attribute</em>'.
 	 * @generated
 	 */
-	Atributo createAtributo();
+	Attribute createAttribute();
 
 	/**
-	 * Returns a new object of class '<em>Informacao</em>'.
+	 * Returns a new object of class '<em>Information</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Informacao</em>'.
+	 * @return a new object of class '<em>Information</em>'.
 	 * @generated
 	 */
-	Informacao createInformacao();
+	Information createInformation();
 
 	/**
-	 * Returns a new object of class '<em>Tabela</em>'.
+	 * Returns a new object of class '<em>Table</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tabela</em>'.
+	 * @return a new object of class '<em>Table</em>'.
 	 * @generated
 	 */
-	Tabela createTabela();
+	Table createTable();
 
 	/**
-	 * Returns a new object of class '<em>Body</em>'.
+	 * Returns a new object of class '<em>Body Table</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Body</em>'.
+	 * @return a new object of class '<em>Body Table</em>'.
 	 * @generated
 	 */
-	Body createBody();
+	BodyTable createBodyTable();
 
 	/**
 	 * Returns a new object of class '<em>Data Type</em>'.

@@ -72,28 +72,28 @@ public class Projeto_CVAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSeccao(Seccao object) {
-			return createSeccaoAdapter();
+		public Adapter caseSection(Section object) {
+			return createSectionAdapter();
 		}
 
 		@Override
-		public Adapter caseAtributo(Atributo object) {
-			return createAtributoAdapter();
+		public Adapter caseAttribute(Attribute object) {
+			return createAttributeAdapter();
 		}
 
 		@Override
-		public Adapter caseInformacao(Informacao object) {
-			return createInformacaoAdapter();
+		public Adapter caseInformation(Information object) {
+			return createInformationAdapter();
 		}
 
 		@Override
-		public Adapter caseTabela(Tabela object) {
-			return createTabelaAdapter();
+		public Adapter caseTable(Table object) {
+			return createTableAdapter();
 		}
 
 		@Override
-		public Adapter caseBody(Body object) {
-			return createBodyAdapter();
+		public Adapter caseBodyTable(BodyTable object) {
+			return createBodyTableAdapter();
 		}
 
 		@Override
@@ -160,72 +160,72 @@ public class Projeto_CVAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link projeto_CV.Seccao <em>Seccao</em>}'.
+	 * Creates a new adapter for an object of class '{@link projeto_CV.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see projeto_CV.Seccao
+	 * @see projeto_CV.Section
 	 * @generated
 	 */
-	public Adapter createSeccaoAdapter() {
+	public Adapter createSectionAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link projeto_CV.Atributo <em>Atributo</em>}'.
+	 * Creates a new adapter for an object of class '{@link projeto_CV.Attribute <em>Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see projeto_CV.Atributo
+	 * @see projeto_CV.Attribute
 	 * @generated
 	 */
-	public Adapter createAtributoAdapter() {
+	public Adapter createAttributeAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link projeto_CV.Informacao <em>Informacao</em>}'.
+	 * Creates a new adapter for an object of class '{@link projeto_CV.Information <em>Information</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see projeto_CV.Informacao
+	 * @see projeto_CV.Information
 	 * @generated
 	 */
-	public Adapter createInformacaoAdapter() {
+	public Adapter createInformationAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link projeto_CV.Tabela <em>Tabela</em>}'.
+	 * Creates a new adapter for an object of class '{@link projeto_CV.Table <em>Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see projeto_CV.Tabela
+	 * @see projeto_CV.Table
 	 * @generated
 	 */
-	public Adapter createTabelaAdapter() {
+	public Adapter createTableAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link projeto_CV.Body <em>Body</em>}'.
+	 * Creates a new adapter for an object of class '{@link projeto_CV.BodyTable <em>Body Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see projeto_CV.Body
+	 * @see projeto_CV.BodyTable
 	 * @generated
 	 */
-	public Adapter createBodyAdapter() {
+	public Adapter createBodyTableAdapter() {
 		return null;
 	}
 

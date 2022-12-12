@@ -18,6 +18,7 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
+import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 
 import org.eclipse.emf.edit.provider.ViewerNotification;
@@ -54,23 +55,39 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addSeccaoPropertyDescriptor(object);
+			addSectionsPropertyDescriptor(object);
+			addVersionPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Seccao feature.
+	 * This adds a property descriptor for the Sections feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addSeccaoPropertyDescriptor(Object object) {
+	protected void addSectionsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_CV_seccao_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_CV_seccao_feature", "_UI_CV_type"),
-						Projeto_CVPackage.Literals.CV__SECCAO, true, false, true, null, null, null));
+						getResourceLocator(), getString("_UI_CV_sections_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_CV_sections_feature", "_UI_CV_type"),
+						Projeto_CVPackage.Literals.CV__SECTIONS, true, false, true, null, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Version feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addVersionPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_CV_version_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_CV_version_feature", "_UI_CV_type"),
+						Projeto_CVPackage.Literals.CV__VERSION, true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -85,7 +102,7 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(Projeto_CVPackage.Literals.CV__SECCAO);
+			childrenFeatures.add(Projeto_CVPackage.Literals.CV__SECTIONS);
 		}
 		return childrenFeatures;
 	}
@@ -132,7 +149,8 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_CV_type");
+		CV cv = (CV) object;
+		return getString("_UI_CV_type") + " " + cv.getVersion();
 	}
 
 	/**
@@ -147,7 +165,10 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(CV.class)) {
-		case Projeto_CVPackage.CV__SECCAO:
+		case Projeto_CVPackage.CV__VERSION:
+			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			return;
+		case Projeto_CVPackage.CV__SECTIONS:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
 		}
@@ -165,8 +186,8 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(Projeto_CVPackage.Literals.CV__SECCAO,
-				Projeto_CVFactory.eINSTANCE.createSeccao()));
+		newChildDescriptors.add(createChildParameter(Projeto_CVPackage.Literals.CV__SECTIONS,
+				Projeto_CVFactory.eINSTANCE.createSection()));
 	}
 
 	/**

@@ -96,118 +96,118 @@ public class Projeto_CVItemProviderAdapterFactory extends Projeto_CVAdapterFacto
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link projeto_CV.Seccao} instances.
+	 * This keeps track of the one adapter used for all {@link projeto_CV.Section} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SeccaoItemProvider seccaoItemProvider;
+	protected SectionItemProvider sectionItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link projeto_CV.Seccao}.
+	 * This creates an adapter for a {@link projeto_CV.Section}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createSeccaoAdapter() {
-		if (seccaoItemProvider == null) {
-			seccaoItemProvider = new SeccaoItemProvider(this);
+	public Adapter createSectionAdapter() {
+		if (sectionItemProvider == null) {
+			sectionItemProvider = new SectionItemProvider(this);
 		}
 
-		return seccaoItemProvider;
+		return sectionItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link projeto_CV.Atributo} instances.
+	 * This keeps track of the one adapter used for all {@link projeto_CV.Attribute} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AtributoItemProvider atributoItemProvider;
+	protected AttributeItemProvider attributeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link projeto_CV.Atributo}.
+	 * This creates an adapter for a {@link projeto_CV.Attribute}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAtributoAdapter() {
-		if (atributoItemProvider == null) {
-			atributoItemProvider = new AtributoItemProvider(this);
+	public Adapter createAttributeAdapter() {
+		if (attributeItemProvider == null) {
+			attributeItemProvider = new AttributeItemProvider(this);
 		}
 
-		return atributoItemProvider;
+		return attributeItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link projeto_CV.Informacao} instances.
+	 * This keeps track of the one adapter used for all {@link projeto_CV.Information} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected InformacaoItemProvider informacaoItemProvider;
+	protected InformationItemProvider informationItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link projeto_CV.Informacao}.
+	 * This creates an adapter for a {@link projeto_CV.Information}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createInformacaoAdapter() {
-		if (informacaoItemProvider == null) {
-			informacaoItemProvider = new InformacaoItemProvider(this);
+	public Adapter createInformationAdapter() {
+		if (informationItemProvider == null) {
+			informationItemProvider = new InformationItemProvider(this);
 		}
 
-		return informacaoItemProvider;
+		return informationItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link projeto_CV.Tabela} instances.
+	 * This keeps track of the one adapter used for all {@link projeto_CV.Table} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TabelaItemProvider tabelaItemProvider;
+	protected TableItemProvider tableItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link projeto_CV.Tabela}.
+	 * This creates an adapter for a {@link projeto_CV.Table}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createTabelaAdapter() {
-		if (tabelaItemProvider == null) {
-			tabelaItemProvider = new TabelaItemProvider(this);
+	public Adapter createTableAdapter() {
+		if (tableItemProvider == null) {
+			tableItemProvider = new TableItemProvider(this);
 		}
 
-		return tabelaItemProvider;
+		return tableItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link projeto_CV.Body} instances.
+	 * This keeps track of the one adapter used for all {@link projeto_CV.BodyTable} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BodyItemProvider bodyItemProvider;
+	protected BodyTableItemProvider bodyTableItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link projeto_CV.Body}.
+	 * This creates an adapter for a {@link projeto_CV.BodyTable}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createBodyAdapter() {
-		if (bodyItemProvider == null) {
-			bodyItemProvider = new BodyItemProvider(this);
+	public Adapter createBodyTableAdapter() {
+		if (bodyTableItemProvider == null) {
+			bodyTableItemProvider = new BodyTableItemProvider(this);
 		}
 
-		return bodyItemProvider;
+		return bodyTableItemProvider;
 	}
 
 	/**
@@ -449,16 +449,16 @@ public class Projeto_CVItemProviderAdapterFactory extends Projeto_CVAdapterFacto
 	public void dispose() {
 		if (cvItemProvider != null)
 			cvItemProvider.dispose();
-		if (seccaoItemProvider != null)
-			seccaoItemProvider.dispose();
-		if (atributoItemProvider != null)
-			atributoItemProvider.dispose();
-		if (informacaoItemProvider != null)
-			informacaoItemProvider.dispose();
-		if (tabelaItemProvider != null)
-			tabelaItemProvider.dispose();
-		if (bodyItemProvider != null)
-			bodyItemProvider.dispose();
+		if (sectionItemProvider != null)
+			sectionItemProvider.dispose();
+		if (attributeItemProvider != null)
+			attributeItemProvider.dispose();
+		if (informationItemProvider != null)
+			informationItemProvider.dispose();
+		if (tableItemProvider != null)
+			tableItemProvider.dispose();
+		if (bodyTableItemProvider != null)
+			bodyTableItemProvider.dispose();
 		if (dataTypeItemProvider != null)
 			dataTypeItemProvider.dispose();
 		if (stringTypeItemProvider != null)

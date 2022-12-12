@@ -11,21 +11,19 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import projeto_CV.Atributo;
-import projeto_CV.Body;
+import projeto_CV.Attribute;
+import projeto_CV.BodyTable;
 import projeto_CV.DataType;
 import projeto_CV.FloatType;
 import projeto_CV.HeadTabela;
-import projeto_CV.Informacao;
+import projeto_CV.Information;
 import projeto_CV.Projeto_CVFactory;
 import projeto_CV.Projeto_CVPackage;
 import projeto_CV.Row;
-import projeto_CV.Seccao;
+import projeto_CV.Section;
 import projeto_CV.StringType;
 import projeto_CV.SuperType;
-import projeto_CV.Tabela;
-
+import projeto_CV.Table;
 import projeto_CV.util.Projeto_CVValidator;
 
 /**
@@ -47,35 +45,35 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass seccaoEClass = null;
+	private EClass sectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass atributoEClass = null;
+	private EClass attributeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass informacaoEClass = null;
+	private EClass informationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass tabelaEClass = null;
+	private EClass tableEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass bodyEClass = null;
+	private EClass bodyTableEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,7 +202,7 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCV_Seccao() {
+	public EReference getCV_Sections() {
 		return (EReference) cvEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -213,8 +211,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSeccao() {
-		return seccaoEClass;
+	public EAttribute getCV_Version() {
+		return (EAttribute) cvEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -222,8 +220,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSeccao_Seccao() {
-		return (EReference) seccaoEClass.getEStructuralFeatures().get(0);
+	public EClass getSection() {
+		return sectionEClass;
 	}
 
 	/**
@@ -231,8 +229,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeccao_Nome() {
-		return (EAttribute) seccaoEClass.getEStructuralFeatures().get(1);
+	public EReference getSection_Sections() {
+		return (EReference) sectionEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -240,8 +238,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSeccao_Atributo() {
-		return (EReference) seccaoEClass.getEStructuralFeatures().get(2);
+	public EAttribute getSection_Name() {
+		return (EAttribute) sectionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -249,8 +247,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getSeccao__DiffNameSection__DiagnosticChain_Map() {
-		return seccaoEClass.getEOperations().get(0);
+	public EReference getSection_Attributes() {
+		return (EReference) sectionEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -258,8 +256,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getAtributo() {
-		return atributoEClass;
+	public EOperation getSection__DiffNameSection__DiagnosticChain_Map() {
+		return sectionEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -267,8 +265,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getInformacao() {
-		return informacaoEClass;
+	public EClass getAttribute() {
+		return attributeEClass;
 	}
 
 	/**
@@ -276,8 +274,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInformacao_Titulo() {
-		return (EAttribute) informacaoEClass.getEStructuralFeatures().get(0);
+	public EAttribute getAttribute_Titulo() {
+		return (EAttribute) attributeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -285,8 +283,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getInformacao_Supertype() {
-		return (EReference) informacaoEClass.getEStructuralFeatures().get(1);
+	public EClass getInformation() {
+		return informationEClass;
 	}
 
 	/**
@@ -294,8 +292,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTabela() {
-		return tabelaEClass;
+	public EReference getInformation_Supertype() {
+		return (EReference) informationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -303,8 +301,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTabela_Titulo() {
-		return (EAttribute) tabelaEClass.getEStructuralFeatures().get(0);
+	public EClass getTable() {
+		return tableEClass;
 	}
 
 	/**
@@ -312,8 +310,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTabela_Header() {
-		return (EReference) tabelaEClass.getEStructuralFeatures().get(1);
+	public EReference getTable_Header() {
+		return (EReference) tableEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -321,8 +319,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getTabela_Body() {
-		return (EReference) tabelaEClass.getEStructuralFeatures().get(2);
+	public EReference getTable_Body() {
+		return (EReference) tableEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -330,8 +328,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTabela__SameSizeRows__DiagnosticChain_Map() {
-		return tabelaEClass.getEOperations().get(0);
+	public EOperation getTable__SameSizeRows__DiagnosticChain_Map() {
+		return tableEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -339,8 +337,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getTabela__TituloNotNull__DiagnosticChain_Map() {
-		return tabelaEClass.getEOperations().get(1);
+	public EClass getBodyTable() {
+		return bodyTableEClass;
 	}
 
 	/**
@@ -348,17 +346,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBody() {
-		return bodyEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getBody_Row() {
-		return (EReference) bodyEClass.getEStructuralFeatures().get(0);
+	public EReference getBodyTable_Row() {
+		return (EReference) bodyTableEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -375,7 +364,7 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDataType_Date() {
+	public EAttribute getDataType_Value() {
 		return (EAttribute) dataTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -393,7 +382,7 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStringType_Str() {
+	public EAttribute getStringType_Value() {
 		return (EAttribute) stringTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -411,7 +400,7 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFloatType_Flt() {
+	public EAttribute getFloatType_Value() {
 		return (EAttribute) floatTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -429,17 +418,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHeadTabela_Nome() {
-		return (EAttribute) headTabelaEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getHeadTabela_Row() {
-		return (EReference) headTabelaEClass.getEStructuralFeatures().get(1);
+		return (EReference) headTabelaEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -508,41 +488,39 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 
 		// Create classes and their features
 		cvEClass = createEClass(CV);
-		createEReference(cvEClass, CV__SECCAO);
+		createEReference(cvEClass, CV__SECTIONS);
+		createEAttribute(cvEClass, CV__VERSION);
 
-		seccaoEClass = createEClass(SECCAO);
-		createEReference(seccaoEClass, SECCAO__SECCAO);
-		createEAttribute(seccaoEClass, SECCAO__NOME);
-		createEReference(seccaoEClass, SECCAO__ATRIBUTO);
-		createEOperation(seccaoEClass, SECCAO___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP);
+		sectionEClass = createEClass(SECTION);
+		createEReference(sectionEClass, SECTION__SECTIONS);
+		createEAttribute(sectionEClass, SECTION__NAME);
+		createEReference(sectionEClass, SECTION__ATTRIBUTES);
+		createEOperation(sectionEClass, SECTION___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP);
 
-		atributoEClass = createEClass(ATRIBUTO);
+		attributeEClass = createEClass(ATTRIBUTE);
+		createEAttribute(attributeEClass, ATTRIBUTE__TITULO);
 
-		informacaoEClass = createEClass(INFORMACAO);
-		createEAttribute(informacaoEClass, INFORMACAO__TITULO);
-		createEReference(informacaoEClass, INFORMACAO__SUPERTYPE);
+		informationEClass = createEClass(INFORMATION);
+		createEReference(informationEClass, INFORMATION__SUPERTYPE);
 
-		tabelaEClass = createEClass(TABELA);
-		createEAttribute(tabelaEClass, TABELA__TITULO);
-		createEReference(tabelaEClass, TABELA__HEADER);
-		createEReference(tabelaEClass, TABELA__BODY);
-		createEOperation(tabelaEClass, TABELA___SAME_SIZE_ROWS__DIAGNOSTICCHAIN_MAP);
-		createEOperation(tabelaEClass, TABELA___TITULO_NOT_NULL__DIAGNOSTICCHAIN_MAP);
+		tableEClass = createEClass(TABLE);
+		createEReference(tableEClass, TABLE__HEADER);
+		createEReference(tableEClass, TABLE__BODY);
+		createEOperation(tableEClass, TABLE___SAME_SIZE_ROWS__DIAGNOSTICCHAIN_MAP);
 
-		bodyEClass = createEClass(BODY);
-		createEReference(bodyEClass, BODY__ROW);
+		bodyTableEClass = createEClass(BODY_TABLE);
+		createEReference(bodyTableEClass, BODY_TABLE__ROW);
 
 		dataTypeEClass = createEClass(DATA_TYPE);
-		createEAttribute(dataTypeEClass, DATA_TYPE__DATE);
+		createEAttribute(dataTypeEClass, DATA_TYPE__VALUE);
 
 		stringTypeEClass = createEClass(STRING_TYPE);
-		createEAttribute(stringTypeEClass, STRING_TYPE__STR);
+		createEAttribute(stringTypeEClass, STRING_TYPE__VALUE);
 
 		floatTypeEClass = createEClass(FLOAT_TYPE);
-		createEAttribute(floatTypeEClass, FLOAT_TYPE__FLT);
+		createEAttribute(floatTypeEClass, FLOAT_TYPE__VALUE);
 
 		headTabelaEClass = createEClass(HEAD_TABELA);
-		createEAttribute(headTabelaEClass, HEAD_TABELA__NOME);
 		createEReference(headTabelaEClass, HEAD_TABELA__ROW);
 
 		superTypeEClass = createEClass(SUPER_TYPE);
@@ -581,29 +559,31 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		informacaoEClass.getESuperTypes().add(this.getAtributo());
-		tabelaEClass.getESuperTypes().add(this.getAtributo());
+		informationEClass.getESuperTypes().add(this.getAttribute());
+		tableEClass.getESuperTypes().add(this.getAttribute());
 		dataTypeEClass.getESuperTypes().add(this.getSuperType());
 		stringTypeEClass.getESuperTypes().add(this.getSuperType());
 		floatTypeEClass.getESuperTypes().add(this.getSuperType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(cvEClass, projeto_CV.CV.class, "CV", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCV_Seccao(), this.getSeccao(), null, "seccao", null, 0, -1, projeto_CV.CV.class,
+		initEReference(getCV_Sections(), this.getSection(), null, "sections", null, 0, -1, projeto_CV.CV.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCV_Version(), ecorePackage.getEFloat(), "version", null, 1, 1, projeto_CV.CV.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(seccaoEClass, Seccao.class, "Seccao", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSeccao_Seccao(), this.getSeccao(), null, "seccao", null, 0, -1, Seccao.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-				IS_ORDERED);
-		initEAttribute(getSeccao_Nome(), ecorePackage.getEString(), "nome", null, 0, 1, Seccao.class, !IS_TRANSIENT,
+		initEClass(sectionEClass, Section.class, "Section", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSection_Sections(), this.getSection(), null, "sections", null, 0, -1, Section.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSection_Name(), ecorePackage.getEString(), "name", null, 0, 1, Section.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSeccao_Atributo(), this.getAtributo(), null, "atributo", null, 0, -1, Seccao.class,
+		initEReference(getSection_Attributes(), this.getAttribute(), null, "attributes", null, 0, -1, Section.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		EOperation op = initEOperation(getSeccao__DiffNameSection__DiagnosticChain_Map(), ecorePackage.getEBoolean(),
+		EOperation op = initEOperation(getSection__DiffNameSection__DiagnosticChain_Map(), ecorePackage.getEBoolean(),
 				"diffNameSection", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
@@ -613,28 +593,26 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(atributoEClass, Atributo.class, "Atributo", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(informacaoEClass, Informacao.class, "Informacao", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInformacao_Titulo(), ecorePackage.getEString(), "titulo", null, 0, 1, Informacao.class,
+		initEAttribute(getAttribute_Titulo(), ecorePackage.getEString(), "titulo", null, 0, 1, Attribute.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getInformacao_Supertype(), this.getSuperType(), null, "supertype", null, 0, 1, Informacao.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(tabelaEClass, Tabela.class, "Tabela", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getTabela_Titulo(), ecorePackage.getEString(), "titulo", null, 0, 1, Tabela.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTabela_Header(), this.getHeadTabela(), null, "header", null, 0, 1, Tabela.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTabela_Body(), this.getBody(), null, "body", null, 0, 1, Tabela.class, !IS_TRANSIENT,
+		initEClass(informationEClass, Information.class, "Information", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getInformation_Supertype(), this.getSuperType(), null, "supertype", null, 0, 1,
+				Information.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(tableEClass, Table.class, "Table", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTable_Header(), this.getHeadTabela(), null, "header", null, 0, 1, Table.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
+		initEReference(getTable_Body(), this.getBodyTable(), null, "body", null, 0, 1, Table.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
 
-		op = initEOperation(getTabela__SameSizeRows__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "sameSizeRows",
+		op = initEOperation(getTable__SameSizeRows__DiagnosticChain_Map(), ecorePackage.getEBoolean(), "sameSizeRows",
 				0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -644,39 +622,29 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getTabela__TituloNotNull__DiagnosticChain_Map(), ecorePackage.getEBoolean(),
-				"tituloNotNull", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		initEClass(bodyEClass, Body.class, "Body", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBody_Row(), this.getRow(), null, "row", null, 1, -1, Body.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(bodyTableEClass, BodyTable.class, "BodyTable", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getBodyTable_Row(), this.getRow(), null, "row", null, 1, -1, BodyTable.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 
 		initEClass(dataTypeEClass, DataType.class, "DataType", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDataType_Date(), ecorePackage.getEDate(), "date", null, 0, 1, DataType.class, !IS_TRANSIENT,
+		initEAttribute(getDataType_Value(), ecorePackage.getEDate(), "value", null, 0, 1, DataType.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(stringTypeEClass, StringType.class, "StringType", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getStringType_Str(), ecorePackage.getEString(), "str", null, 0, 1, StringType.class,
+		initEAttribute(getStringType_Value(), ecorePackage.getEString(), "value", null, 0, 1, StringType.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(floatTypeEClass, FloatType.class, "FloatType", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFloatType_Flt(), ecorePackage.getEFloat(), "flt", null, 1, 1, FloatType.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFloatType_Value(), ecorePackage.getEFloat(), "value", null, 1, 1, FloatType.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(headTabelaEClass, HeadTabela.class, "HeadTabela", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getHeadTabela_Nome(), ecorePackage.getEString(), "nome", null, 0, 1, HeadTabela.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHeadTabela_Row(), this.getRow(), null, "row", null, 1, 1, HeadTabela.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
@@ -711,8 +679,8 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	protected void createEcoreAnnotations() {
 		String source = "http://www.eclipse.org/emf/2002/Ecore";
 		addAnnotation(this, source, new String[] {});
-		addAnnotation(seccaoEClass, source, new String[] { "constraints", "diffNameSection" });
-		addAnnotation(tabelaEClass, source, new String[] { "constraints", "tituloNotNull" });
+		addAnnotation(sectionEClass, source, new String[] { "constraints", "diffNameSection" });
+		addAnnotation(tableEClass, source, new String[] { "constraints", "sameSizeRows" });
 	}
 
 	/**
@@ -723,12 +691,10 @@ public class Projeto_CVPackageImpl extends EPackageImpl implements Projeto_CVPac
 	 */
 	protected void createPivotAnnotations() {
 		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";
-		addAnnotation(getSeccao__DiffNameSection__DiagnosticChain_Map(), source,
-				new String[] { "body", "Seccao.allInstances()->isUnique(nome)" });
-		addAnnotation(getTabela__SameSizeRows__DiagnosticChain_Map(), source, new String[] { "body",
+		addAnnotation(getSection__DiffNameSection__DiagnosticChain_Map(), source,
+				new String[] { "body", "Section.allInstances()->isUnique(name)" });
+		addAnnotation(getTable__SameSizeRows__DiagnosticChain_Map(), source, new String[] { "body",
 				"self.body.row->forAll(r | r.supertype->size() = self.header.row.supertype->size())" });
-		addAnnotation(getTabela__TituloNotNull__DiagnosticChain_Map(), source,
-				new String[] { "body", "self.titulo->notEmpty()" });
 	}
 
 } //Projeto_CVPackageImpl

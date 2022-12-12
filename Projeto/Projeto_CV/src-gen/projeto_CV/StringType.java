@@ -11,7 +11,7 @@ package projeto_CV;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.StringType#getStr <em>Str</em>}</li>
+ *   <li>{@link projeto_CV.StringType#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @see projeto_CV.Projeto_CVPackage#getStringType()
@@ -20,25 +20,25 @@ package projeto_CV;
  */
 public interface StringType extends SuperType {
 	/**
-	 * Returns the value of the '<em><b>Str</b></em>' attribute.
+	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Str</em>' attribute.
-	 * @see #setStr(String)
-	 * @see projeto_CV.Projeto_CVPackage#getStringType_Str()
+	 * @return the value of the '<em>Value</em>' attribute.
+	 * @see #setValue(String)
+	 * @see projeto_CV.Projeto_CVPackage#getStringType_Value()
 	 * @model
 	 * @generated
 	 */
-	String getStr();
+	String getValue();
 
 	/**
-	 * Sets the value of the '{@link projeto_CV.StringType#getStr <em>Str</em>}' attribute.
+	 * Sets the value of the '{@link projeto_CV.StringType#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Str</em>' attribute.
-	 * @see #getStr()
+	 * @param value the new value of the '<em>Value</em>' attribute.
+	 * @see #getValue()
 	 * @generated
 	 */
-	void setStr(String value);
+	void setValue(String value);
 
 } // StringType

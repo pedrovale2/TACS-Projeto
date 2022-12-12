@@ -21,31 +21,31 @@ import projeto_CV.Projeto_CVPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.impl.DataTypeImpl#getDate <em>Date</em>}</li>
+ *   <li>{@link projeto_CV.impl.DataTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	/**
-	 * The default value of the '{@link #getDate() <em>Date</em>}' attribute.
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDate()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Date DATE_EDEFAULT = null;
+	protected static final Date VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDate() <em>Date</em>}' attribute.
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDate()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected Date date = DATE_EDEFAULT;
+	protected Date value = VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,8 +71,8 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Date getDate() {
-		return date;
+	public Date getValue() {
+		return value;
 	}
 
 	/**
@@ -80,11 +80,11 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDate(Date newDate) {
-		Date oldDate = date;
-		date = newDate;
+	public void setValue(Date newValue) {
+		Date oldValue = value;
+		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.DATA_TYPE__DATE, oldDate, date));
+			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.DATA_TYPE__VALUE, oldValue, value));
 	}
 
 	/**
@@ -95,8 +95,8 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case Projeto_CVPackage.DATA_TYPE__DATE:
-			return getDate();
+		case Projeto_CVPackage.DATA_TYPE__VALUE:
+			return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -109,8 +109,8 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case Projeto_CVPackage.DATA_TYPE__DATE:
-			setDate((Date) newValue);
+		case Projeto_CVPackage.DATA_TYPE__VALUE:
+			setValue((Date) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -124,8 +124,8 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.DATA_TYPE__DATE:
-			setDate(DATE_EDEFAULT);
+		case Projeto_CVPackage.DATA_TYPE__VALUE:
+			setValue(VALUE_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -139,8 +139,8 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.DATA_TYPE__DATE:
-			return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
+		case Projeto_CVPackage.DATA_TYPE__VALUE:
+			return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -156,8 +156,8 @@ public class DataTypeImpl extends SuperTypeImpl implements DataType {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (date: ");
-		result.append(date);
+		result.append(" (value: ");
+		result.append(value);
 		result.append(')');
 		return result.toString();
 	}

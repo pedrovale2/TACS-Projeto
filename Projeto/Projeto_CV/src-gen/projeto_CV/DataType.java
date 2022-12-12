@@ -13,7 +13,7 @@ import java.util.Date;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.DataType#getDate <em>Date</em>}</li>
+ *   <li>{@link projeto_CV.DataType#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @see projeto_CV.Projeto_CVPackage#getDataType()
@@ -22,25 +22,25 @@ import java.util.Date;
  */
 public interface DataType extends SuperType {
 	/**
-	 * Returns the value of the '<em><b>Date</b></em>' attribute.
+	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date</em>' attribute.
-	 * @see #setDate(Date)
-	 * @see projeto_CV.Projeto_CVPackage#getDataType_Date()
+	 * @return the value of the '<em>Value</em>' attribute.
+	 * @see #setValue(Date)
+	 * @see projeto_CV.Projeto_CVPackage#getDataType_Value()
 	 * @model
 	 * @generated
 	 */
-	Date getDate();
+	Date getValue();
 
 	/**
-	 * Sets the value of the '{@link projeto_CV.DataType#getDate <em>Date</em>}' attribute.
+	 * Sets the value of the '{@link projeto_CV.DataType#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Date</em>' attribute.
-	 * @see #getDate()
+	 * @param value the new value of the '<em>Value</em>' attribute.
+	 * @see #getValue()
 	 * @generated
 	 */
-	void setDate(Date value);
+	void setValue(Date value);
 
 } // DataType

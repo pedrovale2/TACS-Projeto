@@ -19,31 +19,31 @@ import projeto_CV.Projeto_CVPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.impl.FloatTypeImpl#getFlt <em>Flt</em>}</li>
+ *   <li>{@link projeto_CV.impl.FloatTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	/**
-	 * The default value of the '{@link #getFlt() <em>Flt</em>}' attribute.
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFlt()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final float FLT_EDEFAULT = 0.0F;
+	protected static final float VALUE_EDEFAULT = 0.0F;
 
 	/**
-	 * The cached value of the '{@link #getFlt() <em>Flt</em>}' attribute.
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFlt()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected float flt = FLT_EDEFAULT;
+	protected float value = VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,8 +69,8 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public float getFlt() {
-		return flt;
+	public float getValue() {
+		return value;
 	}
 
 	/**
@@ -78,11 +78,12 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFlt(float newFlt) {
-		float oldFlt = flt;
-		flt = newFlt;
+	public void setValue(float newValue) {
+		float oldValue = value;
+		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.FLOAT_TYPE__FLT, oldFlt, flt));
+			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.FLOAT_TYPE__VALUE, oldValue,
+					value));
 	}
 
 	/**
@@ -93,8 +94,8 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case Projeto_CVPackage.FLOAT_TYPE__FLT:
-			return getFlt();
+		case Projeto_CVPackage.FLOAT_TYPE__VALUE:
+			return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +108,8 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case Projeto_CVPackage.FLOAT_TYPE__FLT:
-			setFlt((Float) newValue);
+		case Projeto_CVPackage.FLOAT_TYPE__VALUE:
+			setValue((Float) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +123,8 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.FLOAT_TYPE__FLT:
-			setFlt(FLT_EDEFAULT);
+		case Projeto_CVPackage.FLOAT_TYPE__VALUE:
+			setValue(VALUE_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +138,8 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.FLOAT_TYPE__FLT:
-			return flt != FLT_EDEFAULT;
+		case Projeto_CVPackage.FLOAT_TYPE__VALUE:
+			return value != VALUE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -154,8 +155,8 @@ public class FloatTypeImpl extends SuperTypeImpl implements FloatType {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (flt: ");
-		result.append(flt);
+		result.append(" (value: ");
+		result.append(value);
 		result.append(')');
 		return result.toString();
 	}

@@ -45,24 +45,24 @@ public class DataTypeItemProvider extends SuperTypeItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDatePropertyDescriptor(object);
+			addValuePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Date feature.
+	 * This adds a property descriptor for the Value feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDatePropertyDescriptor(Object object) {
+	protected void addValuePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_DataType_date_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_DataType_date_feature",
+						getResourceLocator(), getString("_UI_DataType_value_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_DataType_value_feature",
 								"_UI_DataType_type"),
-						Projeto_CVPackage.Literals.DATA_TYPE__DATE, true, false, false,
+						Projeto_CVPackage.Literals.DATA_TYPE__VALUE, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
@@ -95,7 +95,7 @@ public class DataTypeItemProvider extends SuperTypeItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		Date labelValue = ((DataType) object).getDate();
+		Date labelValue = ((DataType) object).getValue();
 		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ? getString("_UI_DataType_type")
 				: getString("_UI_DataType_type") + " " + label;
@@ -113,7 +113,7 @@ public class DataTypeItemProvider extends SuperTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(DataType.class)) {
-		case Projeto_CVPackage.DATA_TYPE__DATE:
+		case Projeto_CVPackage.DATA_TYPE__VALUE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

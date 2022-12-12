@@ -64,25 +64,24 @@ public class Projeto_CVTables extends AbstractTables
 	public static final /*@NonInvalid*/ RootPackageId PACKid_$metamodel$ = IdManager.getRootPackageId("$metamodel$");
 	public static final /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore = IdManager.getNsURIPackageId("http://www.eclipse.org/emf/2002/Ecore", null, EcorePackage.eINSTANCE);
 	public static final /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_www_example_org_s_projeto_CV = IdManager.getNsURIPackageId("http://www.example.org/projeto_CV", null, Projeto_CVPackage.eINSTANCE);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Atributo = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Atributo", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Body = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Body", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Attribute = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Attribute", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_BodyTable = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("BodyTable", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_CV = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("CV", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_Class = Projeto_CVTables.PACKid_$metamodel$.getClassId("Class", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_HeadTabela = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("HeadTabela", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Informacao = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Informacao", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Information = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Information", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_Row = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Row", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Seccao = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Seccao", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Section = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Section", 0);
 	public static final /*@NonInvalid*/ ClassId CLSSid_SuperType = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("SuperType", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Tabela = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Tabela", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Table = Projeto_CVTables.PACKid_http_c_s_s_www_example_org_s_projeto_CV.getClassId("Table", 0);
 	public static final /*@NonInvalid*/ DataTypeId DATAid_EDate = Projeto_CVTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EDate", 0);
 	public static final /*@NonInvalid*/ DataTypeId DATAid_EFloat = Projeto_CVTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EFloat", 0);
 	public static final /*@NonInvalid*/ IntegerValue INT_0 = ValueUtil.integerValueOf("0");
-	public static final /*@NonInvalid*/ CollectionTypeId SET_PRIMid_String = TypeId.SET.getSpecializedId(TypeId.STRING);
-	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Atributo = TypeId.ORDERED_SET.getSpecializedId(Projeto_CVTables.CLSSid_Atributo);
+	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Attribute = TypeId.ORDERED_SET.getSpecializedId(Projeto_CVTables.CLSSid_Attribute);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Row = TypeId.ORDERED_SET.getSpecializedId(Projeto_CVTables.CLSSid_Row);
-	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Seccao = TypeId.ORDERED_SET.getSpecializedId(Projeto_CVTables.CLSSid_Seccao);
+	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_Section = TypeId.ORDERED_SET.getSpecializedId(Projeto_CVTables.CLSSid_Section);
 	public static final /*@NonInvalid*/ CollectionTypeId ORD_CLSSid_SuperType = TypeId.ORDERED_SET.getSpecializedId(Projeto_CVTables.CLSSid_SuperType);
-	public static final /*@NonInvalid*/ CollectionTypeId SET_CLSSid_Seccao = TypeId.SET.getSpecializedId(Projeto_CVTables.CLSSid_Seccao);
+	public static final /*@NonInvalid*/ CollectionTypeId SET_CLSSid_Section = TypeId.SET.getSpecializedId(Projeto_CVTables.CLSSid_Section);
 
 	/**
 	 *	The type parameters for templated types and operations.
@@ -112,32 +111,32 @@ public class Projeto_CVTables extends AbstractTables
 			TypeParameters.init();
 		}
 
-		public static final EcoreExecutorType _Atributo = new EcoreExecutorType(Projeto_CVPackage.Literals.ATRIBUTO, PACKAGE, 0);
-		public static final EcoreExecutorType _Body = new EcoreExecutorType(Projeto_CVPackage.Literals.BODY, PACKAGE, 0);
+		public static final EcoreExecutorType _Attribute = new EcoreExecutorType(Projeto_CVPackage.Literals.ATTRIBUTE, PACKAGE, 0);
+		public static final EcoreExecutorType _BodyTable = new EcoreExecutorType(Projeto_CVPackage.Literals.BODY_TABLE, PACKAGE, 0);
 		public static final EcoreExecutorType _CV = new EcoreExecutorType(Projeto_CVPackage.Literals.CV, PACKAGE, 0);
 		public static final EcoreExecutorType _DataType = new EcoreExecutorType(Projeto_CVPackage.Literals.DATA_TYPE, PACKAGE, 0);
 		public static final EcoreExecutorType _FloatType = new EcoreExecutorType(Projeto_CVPackage.Literals.FLOAT_TYPE, PACKAGE, 0);
 		public static final EcoreExecutorType _HeadTabela = new EcoreExecutorType(Projeto_CVPackage.Literals.HEAD_TABELA, PACKAGE, 0);
-		public static final EcoreExecutorType _Informacao = new EcoreExecutorType(Projeto_CVPackage.Literals.INFORMACAO, PACKAGE, 0);
+		public static final EcoreExecutorType _Information = new EcoreExecutorType(Projeto_CVPackage.Literals.INFORMATION, PACKAGE, 0);
 		public static final EcoreExecutorType _Row = new EcoreExecutorType(Projeto_CVPackage.Literals.ROW, PACKAGE, 0);
-		public static final EcoreExecutorType _Seccao = new EcoreExecutorType(Projeto_CVPackage.Literals.SECCAO, PACKAGE, 0);
+		public static final EcoreExecutorType _Section = new EcoreExecutorType(Projeto_CVPackage.Literals.SECTION, PACKAGE, 0);
 		public static final EcoreExecutorType _StringType = new EcoreExecutorType(Projeto_CVPackage.Literals.STRING_TYPE, PACKAGE, 0);
 		public static final EcoreExecutorType _SuperType = new EcoreExecutorType(Projeto_CVPackage.Literals.SUPER_TYPE, PACKAGE, 0);
-		public static final EcoreExecutorType _Tabela = new EcoreExecutorType(Projeto_CVPackage.Literals.TABELA, PACKAGE, 0);
+		public static final EcoreExecutorType _Table = new EcoreExecutorType(Projeto_CVPackage.Literals.TABLE, PACKAGE, 0);
 
 		private static final EcoreExecutorType /*@NonNull*/ [] types = {
-			_Atributo,
-			_Body,
+			_Attribute,
+			_BodyTable,
 			_CV,
 			_DataType,
 			_FloatType,
 			_HeadTabela,
-			_Informacao,
+			_Information,
 			_Row,
-			_Seccao,
+			_Section,
 			_StringType,
 			_SuperType,
-			_Tabela
+			_Table
 		};
 
 		/*
@@ -163,13 +162,13 @@ public class Projeto_CVTables extends AbstractTables
 			Types.init();
 		}
 
-		private static final ExecutorFragment _Atributo__Atributo = new ExecutorFragment(Types._Atributo, Projeto_CVTables.Types._Atributo);
-		private static final ExecutorFragment _Atributo__OclAny = new ExecutorFragment(Types._Atributo, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _Atributo__OclElement = new ExecutorFragment(Types._Atributo, OCLstdlibTables.Types._OclElement);
+		private static final ExecutorFragment _Attribute__Attribute = new ExecutorFragment(Types._Attribute, Projeto_CVTables.Types._Attribute);
+		private static final ExecutorFragment _Attribute__OclAny = new ExecutorFragment(Types._Attribute, OCLstdlibTables.Types._OclAny);
+		private static final ExecutorFragment _Attribute__OclElement = new ExecutorFragment(Types._Attribute, OCLstdlibTables.Types._OclElement);
 
-		private static final ExecutorFragment _Body__Body = new ExecutorFragment(Types._Body, Projeto_CVTables.Types._Body);
-		private static final ExecutorFragment _Body__OclAny = new ExecutorFragment(Types._Body, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _Body__OclElement = new ExecutorFragment(Types._Body, OCLstdlibTables.Types._OclElement);
+		private static final ExecutorFragment _BodyTable__BodyTable = new ExecutorFragment(Types._BodyTable, Projeto_CVTables.Types._BodyTable);
+		private static final ExecutorFragment _BodyTable__OclAny = new ExecutorFragment(Types._BodyTable, OCLstdlibTables.Types._OclAny);
+		private static final ExecutorFragment _BodyTable__OclElement = new ExecutorFragment(Types._BodyTable, OCLstdlibTables.Types._OclElement);
 
 		private static final ExecutorFragment _CV__CV = new ExecutorFragment(Types._CV, Projeto_CVTables.Types._CV);
 		private static final ExecutorFragment _CV__OclAny = new ExecutorFragment(Types._CV, OCLstdlibTables.Types._OclAny);
@@ -189,18 +188,18 @@ public class Projeto_CVTables extends AbstractTables
 		private static final ExecutorFragment _HeadTabela__OclAny = new ExecutorFragment(Types._HeadTabela, OCLstdlibTables.Types._OclAny);
 		private static final ExecutorFragment _HeadTabela__OclElement = new ExecutorFragment(Types._HeadTabela, OCLstdlibTables.Types._OclElement);
 
-		private static final ExecutorFragment _Informacao__Atributo = new ExecutorFragment(Types._Informacao, Projeto_CVTables.Types._Atributo);
-		private static final ExecutorFragment _Informacao__Informacao = new ExecutorFragment(Types._Informacao, Projeto_CVTables.Types._Informacao);
-		private static final ExecutorFragment _Informacao__OclAny = new ExecutorFragment(Types._Informacao, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _Informacao__OclElement = new ExecutorFragment(Types._Informacao, OCLstdlibTables.Types._OclElement);
+		private static final ExecutorFragment _Information__Attribute = new ExecutorFragment(Types._Information, Projeto_CVTables.Types._Attribute);
+		private static final ExecutorFragment _Information__Information = new ExecutorFragment(Types._Information, Projeto_CVTables.Types._Information);
+		private static final ExecutorFragment _Information__OclAny = new ExecutorFragment(Types._Information, OCLstdlibTables.Types._OclAny);
+		private static final ExecutorFragment _Information__OclElement = new ExecutorFragment(Types._Information, OCLstdlibTables.Types._OclElement);
 
 		private static final ExecutorFragment _Row__OclAny = new ExecutorFragment(Types._Row, OCLstdlibTables.Types._OclAny);
 		private static final ExecutorFragment _Row__OclElement = new ExecutorFragment(Types._Row, OCLstdlibTables.Types._OclElement);
 		private static final ExecutorFragment _Row__Row = new ExecutorFragment(Types._Row, Projeto_CVTables.Types._Row);
 
-		private static final ExecutorFragment _Seccao__OclAny = new ExecutorFragment(Types._Seccao, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _Seccao__OclElement = new ExecutorFragment(Types._Seccao, OCLstdlibTables.Types._OclElement);
-		private static final ExecutorFragment _Seccao__Seccao = new ExecutorFragment(Types._Seccao, Projeto_CVTables.Types._Seccao);
+		private static final ExecutorFragment _Section__OclAny = new ExecutorFragment(Types._Section, OCLstdlibTables.Types._OclAny);
+		private static final ExecutorFragment _Section__OclElement = new ExecutorFragment(Types._Section, OCLstdlibTables.Types._OclElement);
+		private static final ExecutorFragment _Section__Section = new ExecutorFragment(Types._Section, Projeto_CVTables.Types._Section);
 
 		private static final ExecutorFragment _StringType__OclAny = new ExecutorFragment(Types._StringType, OCLstdlibTables.Types._OclAny);
 		private static final ExecutorFragment _StringType__OclElement = new ExecutorFragment(Types._StringType, OCLstdlibTables.Types._OclElement);
@@ -211,10 +210,10 @@ public class Projeto_CVTables extends AbstractTables
 		private static final ExecutorFragment _SuperType__OclElement = new ExecutorFragment(Types._SuperType, OCLstdlibTables.Types._OclElement);
 		private static final ExecutorFragment _SuperType__SuperType = new ExecutorFragment(Types._SuperType, Projeto_CVTables.Types._SuperType);
 
-		private static final ExecutorFragment _Tabela__Atributo = new ExecutorFragment(Types._Tabela, Projeto_CVTables.Types._Atributo);
-		private static final ExecutorFragment _Tabela__OclAny = new ExecutorFragment(Types._Tabela, OCLstdlibTables.Types._OclAny);
-		private static final ExecutorFragment _Tabela__OclElement = new ExecutorFragment(Types._Tabela, OCLstdlibTables.Types._OclElement);
-		private static final ExecutorFragment _Tabela__Tabela = new ExecutorFragment(Types._Tabela, Projeto_CVTables.Types._Tabela);
+		private static final ExecutorFragment _Table__Attribute = new ExecutorFragment(Types._Table, Projeto_CVTables.Types._Attribute);
+		private static final ExecutorFragment _Table__OclAny = new ExecutorFragment(Types._Table, OCLstdlibTables.Types._OclAny);
+		private static final ExecutorFragment _Table__OclElement = new ExecutorFragment(Types._Table, OCLstdlibTables.Types._OclElement);
+		private static final ExecutorFragment _Table__Table = new ExecutorFragment(Types._Table, Projeto_CVTables.Types._Table);
 
 		static {
 			Init.initEnd();
@@ -286,44 +285,43 @@ public class Projeto_CVTables extends AbstractTables
 			Operations.init();
 		}
 
-		public static final ExecutorProperty _Atributo__Seccao__atributo = new ExecutorPropertyWithImplementation("Seccao", Types._Atributo, 0, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.SECCAO__ATRIBUTO));
+		public static final ExecutorProperty _Attribute__titulo = new EcoreExecutorProperty(Projeto_CVPackage.Literals.ATTRIBUTE__TITULO, Types._Attribute, 0);
+		public static final ExecutorProperty _Attribute__Section__attributes = new ExecutorPropertyWithImplementation("Section", Types._Attribute, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.SECTION__ATTRIBUTES));
 
-		public static final ExecutorProperty _Body__row = new EcoreExecutorProperty(Projeto_CVPackage.Literals.BODY__ROW, Types._Body, 0);
-		public static final ExecutorProperty _Body__Tabela__body = new ExecutorPropertyWithImplementation("Tabela", Types._Body, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.TABELA__BODY));
+		public static final ExecutorProperty _BodyTable__row = new EcoreExecutorProperty(Projeto_CVPackage.Literals.BODY_TABLE__ROW, Types._BodyTable, 0);
+		public static final ExecutorProperty _BodyTable__Table__body = new ExecutorPropertyWithImplementation("Table", Types._BodyTable, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.TABLE__BODY));
 
-		public static final ExecutorProperty _CV__seccao = new EcoreExecutorProperty(Projeto_CVPackage.Literals.CV__SECCAO, Types._CV, 0);
+		public static final ExecutorProperty _CV__sections = new EcoreExecutorProperty(Projeto_CVPackage.Literals.CV__SECTIONS, Types._CV, 0);
+		public static final ExecutorProperty _CV__version = new EcoreExecutorProperty(Projeto_CVPackage.Literals.CV__VERSION, Types._CV, 1);
 
-		public static final ExecutorProperty _DataType__date = new EcoreExecutorProperty(Projeto_CVPackage.Literals.DATA_TYPE__DATE, Types._DataType, 0);
+		public static final ExecutorProperty _DataType__value = new EcoreExecutorProperty(Projeto_CVPackage.Literals.DATA_TYPE__VALUE, Types._DataType, 0);
 
-		public static final ExecutorProperty _FloatType__flt = new EcoreExecutorProperty(Projeto_CVPackage.Literals.FLOAT_TYPE__FLT, Types._FloatType, 0);
+		public static final ExecutorProperty _FloatType__value = new EcoreExecutorProperty(Projeto_CVPackage.Literals.FLOAT_TYPE__VALUE, Types._FloatType, 0);
 
-		public static final ExecutorProperty _HeadTabela__nome = new EcoreExecutorProperty(Projeto_CVPackage.Literals.HEAD_TABELA__NOME, Types._HeadTabela, 0);
-		public static final ExecutorProperty _HeadTabela__row = new EcoreExecutorProperty(Projeto_CVPackage.Literals.HEAD_TABELA__ROW, Types._HeadTabela, 1);
-		public static final ExecutorProperty _HeadTabela__Tabela__header = new ExecutorPropertyWithImplementation("Tabela", Types._HeadTabela, 2, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.TABELA__HEADER));
+		public static final ExecutorProperty _HeadTabela__row = new EcoreExecutorProperty(Projeto_CVPackage.Literals.HEAD_TABELA__ROW, Types._HeadTabela, 0);
+		public static final ExecutorProperty _HeadTabela__Table__header = new ExecutorPropertyWithImplementation("Table", Types._HeadTabela, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.TABLE__HEADER));
 
-		public static final ExecutorProperty _Informacao__supertype = new EcoreExecutorProperty(Projeto_CVPackage.Literals.INFORMACAO__SUPERTYPE, Types._Informacao, 0);
-		public static final ExecutorProperty _Informacao__titulo = new EcoreExecutorProperty(Projeto_CVPackage.Literals.INFORMACAO__TITULO, Types._Informacao, 1);
+		public static final ExecutorProperty _Information__supertype = new EcoreExecutorProperty(Projeto_CVPackage.Literals.INFORMATION__SUPERTYPE, Types._Information, 0);
 
 		public static final ExecutorProperty _Row__supertype = new EcoreExecutorProperty(Projeto_CVPackage.Literals.ROW__SUPERTYPE, Types._Row, 0);
-		public static final ExecutorProperty _Row__Body__row = new ExecutorPropertyWithImplementation("Body", Types._Row, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.BODY__ROW));
+		public static final ExecutorProperty _Row__BodyTable__row = new ExecutorPropertyWithImplementation("BodyTable", Types._Row, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.BODY_TABLE__ROW));
 		public static final ExecutorProperty _Row__HeadTabela__row = new ExecutorPropertyWithImplementation("HeadTabela", Types._Row, 2, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.HEAD_TABELA__ROW));
 
-		public static final ExecutorProperty _Seccao__atributo = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SECCAO__ATRIBUTO, Types._Seccao, 0);
-		public static final ExecutorProperty _Seccao__nome = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SECCAO__NOME, Types._Seccao, 1);
-		public static final ExecutorProperty _Seccao__seccao = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SECCAO__SECCAO, Types._Seccao, 2);
-		public static final ExecutorProperty _Seccao__CV__seccao = new ExecutorPropertyWithImplementation("CV", Types._Seccao, 3, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.CV__SECCAO));
-		public static final ExecutorProperty _Seccao__Seccao__seccao = new ExecutorPropertyWithImplementation("Seccao", Types._Seccao, 4, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.SECCAO__SECCAO));
+		public static final ExecutorProperty _Section__attributes = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SECTION__ATTRIBUTES, Types._Section, 0);
+		public static final ExecutorProperty _Section__name = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SECTION__NAME, Types._Section, 1);
+		public static final ExecutorProperty _Section__sections = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SECTION__SECTIONS, Types._Section, 2);
+		public static final ExecutorProperty _Section__CV__sections = new ExecutorPropertyWithImplementation("CV", Types._Section, 3, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.CV__SECTIONS));
+		public static final ExecutorProperty _Section__Section__sections = new ExecutorPropertyWithImplementation("Section", Types._Section, 4, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.SECTION__SECTIONS));
 
-		public static final ExecutorProperty _StringType__str = new EcoreExecutorProperty(Projeto_CVPackage.Literals.STRING_TYPE__STR, Types._StringType, 0);
+		public static final ExecutorProperty _StringType__value = new EcoreExecutorProperty(Projeto_CVPackage.Literals.STRING_TYPE__VALUE, Types._StringType, 0);
 
 		public static final ExecutorProperty _SuperType__supertype = new EcoreExecutorProperty(Projeto_CVPackage.Literals.SUPER_TYPE__SUPERTYPE, Types._SuperType, 0);
-		public static final ExecutorProperty _SuperType__Informacao__supertype = new ExecutorPropertyWithImplementation("Informacao", Types._SuperType, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.INFORMACAO__SUPERTYPE));
+		public static final ExecutorProperty _SuperType__Information__supertype = new ExecutorPropertyWithImplementation("Information", Types._SuperType, 1, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.INFORMATION__SUPERTYPE));
 		public static final ExecutorProperty _SuperType__Row__supertype = new ExecutorPropertyWithImplementation("Row", Types._SuperType, 2, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.ROW__SUPERTYPE));
 		public static final ExecutorProperty _SuperType__SuperType__supertype = new ExecutorPropertyWithImplementation("SuperType", Types._SuperType, 3, new EcoreLibraryOppositeProperty(Projeto_CVPackage.Literals.SUPER_TYPE__SUPERTYPE));
 
-		public static final ExecutorProperty _Tabela__body = new EcoreExecutorProperty(Projeto_CVPackage.Literals.TABELA__BODY, Types._Tabela, 0);
-		public static final ExecutorProperty _Tabela__header = new EcoreExecutorProperty(Projeto_CVPackage.Literals.TABELA__HEADER, Types._Tabela, 1);
-		public static final ExecutorProperty _Tabela__titulo = new EcoreExecutorProperty(Projeto_CVPackage.Literals.TABELA__TITULO, Types._Tabela, 2);
+		public static final ExecutorProperty _Table__body = new EcoreExecutorProperty(Projeto_CVPackage.Literals.TABLE__BODY, Types._Table, 0);
+		public static final ExecutorProperty _Table__header = new EcoreExecutorProperty(Projeto_CVPackage.Literals.TABLE__HEADER, Types._Table, 1);
 		static {
 			Init.initEnd();
 		}
@@ -343,21 +341,21 @@ public class Projeto_CVTables extends AbstractTables
 			Properties.init();
 		}
 
-		private static final ExecutorFragment /*@NonNull*/ [] _Atributo =
+		private static final ExecutorFragment /*@NonNull*/ [] _Attribute =
 			{
-				Fragments._Atributo__OclAny /* 0 */,
-				Fragments._Atributo__OclElement /* 1 */,
-				Fragments._Atributo__Atributo /* 2 */
+				Fragments._Attribute__OclAny /* 0 */,
+				Fragments._Attribute__OclElement /* 1 */,
+				Fragments._Attribute__Attribute /* 2 */
 			};
-		private static final int /*@NonNull*/ [] __Atributo = { 1,1,1 };
+		private static final int /*@NonNull*/ [] __Attribute = { 1,1,1 };
 
-		private static final ExecutorFragment /*@NonNull*/ [] _Body =
+		private static final ExecutorFragment /*@NonNull*/ [] _BodyTable =
 			{
-				Fragments._Body__OclAny /* 0 */,
-				Fragments._Body__OclElement /* 1 */,
-				Fragments._Body__Body /* 2 */
+				Fragments._BodyTable__OclAny /* 0 */,
+				Fragments._BodyTable__OclElement /* 1 */,
+				Fragments._BodyTable__BodyTable /* 2 */
 			};
-		private static final int /*@NonNull*/ [] __Body = { 1,1,1 };
+		private static final int /*@NonNull*/ [] __BodyTable = { 1,1,1 };
 
 		private static final ExecutorFragment /*@NonNull*/ [] _CV =
 			{
@@ -393,14 +391,14 @@ public class Projeto_CVTables extends AbstractTables
 			};
 		private static final int /*@NonNull*/ [] __HeadTabela = { 1,1,1 };
 
-		private static final ExecutorFragment /*@NonNull*/ [] _Informacao =
+		private static final ExecutorFragment /*@NonNull*/ [] _Information =
 			{
-				Fragments._Informacao__OclAny /* 0 */,
-				Fragments._Informacao__OclElement /* 1 */,
-				Fragments._Informacao__Atributo /* 2 */,
-				Fragments._Informacao__Informacao /* 3 */
+				Fragments._Information__OclAny /* 0 */,
+				Fragments._Information__OclElement /* 1 */,
+				Fragments._Information__Attribute /* 2 */,
+				Fragments._Information__Information /* 3 */
 			};
-		private static final int /*@NonNull*/ [] __Informacao = { 1,1,1,1 };
+		private static final int /*@NonNull*/ [] __Information = { 1,1,1,1 };
 
 		private static final ExecutorFragment /*@NonNull*/ [] _Row =
 			{
@@ -410,13 +408,13 @@ public class Projeto_CVTables extends AbstractTables
 			};
 		private static final int /*@NonNull*/ [] __Row = { 1,1,1 };
 
-		private static final ExecutorFragment /*@NonNull*/ [] _Seccao =
+		private static final ExecutorFragment /*@NonNull*/ [] _Section =
 			{
-				Fragments._Seccao__OclAny /* 0 */,
-				Fragments._Seccao__OclElement /* 1 */,
-				Fragments._Seccao__Seccao /* 2 */
+				Fragments._Section__OclAny /* 0 */,
+				Fragments._Section__OclElement /* 1 */,
+				Fragments._Section__Section /* 2 */
 			};
-		private static final int /*@NonNull*/ [] __Seccao = { 1,1,1 };
+		private static final int /*@NonNull*/ [] __Section = { 1,1,1 };
 
 		private static final ExecutorFragment /*@NonNull*/ [] _StringType =
 			{
@@ -435,31 +433,31 @@ public class Projeto_CVTables extends AbstractTables
 			};
 		private static final int /*@NonNull*/ [] __SuperType = { 1,1,1 };
 
-		private static final ExecutorFragment /*@NonNull*/ [] _Tabela =
+		private static final ExecutorFragment /*@NonNull*/ [] _Table =
 			{
-				Fragments._Tabela__OclAny /* 0 */,
-				Fragments._Tabela__OclElement /* 1 */,
-				Fragments._Tabela__Atributo /* 2 */,
-				Fragments._Tabela__Tabela /* 3 */
+				Fragments._Table__OclAny /* 0 */,
+				Fragments._Table__OclElement /* 1 */,
+				Fragments._Table__Attribute /* 2 */,
+				Fragments._Table__Table /* 3 */
 			};
-		private static final int /*@NonNull*/ [] __Tabela = { 1,1,1,1 };
+		private static final int /*@NonNull*/ [] __Table = { 1,1,1,1 };
 
 		/**
 		 *	Install the fragment descriptors in the class descriptors.
 		 */
 		static {
-			Types._Atributo.initFragments(_Atributo, __Atributo);
-			Types._Body.initFragments(_Body, __Body);
+			Types._Attribute.initFragments(_Attribute, __Attribute);
+			Types._BodyTable.initFragments(_BodyTable, __BodyTable);
 			Types._CV.initFragments(_CV, __CV);
 			Types._DataType.initFragments(_DataType, __DataType);
 			Types._FloatType.initFragments(_FloatType, __FloatType);
 			Types._HeadTabela.initFragments(_HeadTabela, __HeadTabela);
-			Types._Informacao.initFragments(_Informacao, __Informacao);
+			Types._Information.initFragments(_Information, __Information);
 			Types._Row.initFragments(_Row, __Row);
-			Types._Seccao.initFragments(_Seccao, __Seccao);
+			Types._Section.initFragments(_Section, __Section);
 			Types._StringType.initFragments(_StringType, __StringType);
 			Types._SuperType.initFragments(_SuperType, __SuperType);
-			Types._Tabela.initFragments(_Tabela, __Tabela);
+			Types._Table.initFragments(_Table, __Table);
 
 			Init.initEnd();
 		}
@@ -479,8 +477,8 @@ public class Projeto_CVTables extends AbstractTables
 			TypeFragments.init();
 		}
 
-		private static final ExecutorOperation /*@NonNull*/ [] _Atributo__Atributo = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Atributo__OclAny = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Attribute__Attribute = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _Attribute__OclAny = {
 			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
@@ -497,7 +495,7 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
-		private static final ExecutorOperation /*@NonNull*/ [] _Atributo__OclElement = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Attribute__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -507,8 +505,8 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
-		private static final ExecutorOperation /*@NonNull*/ [] _Body__Body = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Body__OclAny = {
+		private static final ExecutorOperation /*@NonNull*/ [] _BodyTable__BodyTable = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _BodyTable__OclAny = {
 			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
@@ -525,7 +523,7 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
-		private static final ExecutorOperation /*@NonNull*/ [] _Body__OclElement = {
+		private static final ExecutorOperation /*@NonNull*/ [] _BodyTable__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -649,9 +647,9 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
-		private static final ExecutorOperation /*@NonNull*/ [] _Informacao__Informacao = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Informacao__Atributo = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Informacao__OclAny = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Information__Information = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _Information__Attribute = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _Information__OclAny = {
 			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
@@ -668,7 +666,7 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
-		private static final ExecutorOperation /*@NonNull*/ [] _Informacao__OclElement = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Information__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -706,8 +704,8 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
-		private static final ExecutorOperation /*@NonNull*/ [] _Seccao__Seccao = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Seccao__OclAny = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Section__Section = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _Section__OclAny = {
 			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
@@ -724,7 +722,7 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
-		private static final ExecutorOperation /*@NonNull*/ [] _Seccao__OclElement = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Section__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -791,9 +789,9 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclElement__oclModelTypes /* oclModelTypes() */
 		};
 
-		private static final ExecutorOperation /*@NonNull*/ [] _Tabela__Tabela = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Tabela__Atributo = {};
-		private static final ExecutorOperation /*@NonNull*/ [] _Tabela__OclAny = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Table__Table = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _Table__Attribute = {};
+		private static final ExecutorOperation /*@NonNull*/ [] _Table__OclAny = {
 			OCLstdlibTables.Operations._OclAny___lt__gt_ /* _'<>'(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny___eq_ /* _'='(OclSelf[?]) */,
 			OCLstdlibTables.Operations._OclAny__oclAsSet /* oclAsSet() */,
@@ -810,7 +808,7 @@ public class Projeto_CVTables extends AbstractTables
 			OCLstdlibTables.Operations._OclAny__oclTypes /* oclTypes() */,
 			OCLstdlibTables.Operations._OclAny__toString /* toString() */
 		};
-		private static final ExecutorOperation /*@NonNull*/ [] _Tabela__OclElement = {
+		private static final ExecutorOperation /*@NonNull*/ [] _Table__OclElement = {
 			OCLstdlibTables.Operations._OclElement__allInstances /* allInstances() */,
 			OCLstdlibTables.Operations._OclElement__oclAsModelType /* oclAsModelType(TT)(TT[1]) */,
 			OCLstdlibTables.Operations._OclElement__oclContainer /* oclContainer() */,
@@ -824,13 +822,13 @@ public class Projeto_CVTables extends AbstractTables
 		 *	Install the operation descriptors in the fragment descriptors.
 		 */
 		static {
-			Fragments._Atributo__Atributo.initOperations(_Atributo__Atributo);
-			Fragments._Atributo__OclAny.initOperations(_Atributo__OclAny);
-			Fragments._Atributo__OclElement.initOperations(_Atributo__OclElement);
+			Fragments._Attribute__Attribute.initOperations(_Attribute__Attribute);
+			Fragments._Attribute__OclAny.initOperations(_Attribute__OclAny);
+			Fragments._Attribute__OclElement.initOperations(_Attribute__OclElement);
 
-			Fragments._Body__Body.initOperations(_Body__Body);
-			Fragments._Body__OclAny.initOperations(_Body__OclAny);
-			Fragments._Body__OclElement.initOperations(_Body__OclElement);
+			Fragments._BodyTable__BodyTable.initOperations(_BodyTable__BodyTable);
+			Fragments._BodyTable__OclAny.initOperations(_BodyTable__OclAny);
+			Fragments._BodyTable__OclElement.initOperations(_BodyTable__OclElement);
 
 			Fragments._CV__CV.initOperations(_CV__CV);
 			Fragments._CV__OclAny.initOperations(_CV__OclAny);
@@ -850,18 +848,18 @@ public class Projeto_CVTables extends AbstractTables
 			Fragments._HeadTabela__OclAny.initOperations(_HeadTabela__OclAny);
 			Fragments._HeadTabela__OclElement.initOperations(_HeadTabela__OclElement);
 
-			Fragments._Informacao__Atributo.initOperations(_Informacao__Atributo);
-			Fragments._Informacao__Informacao.initOperations(_Informacao__Informacao);
-			Fragments._Informacao__OclAny.initOperations(_Informacao__OclAny);
-			Fragments._Informacao__OclElement.initOperations(_Informacao__OclElement);
+			Fragments._Information__Attribute.initOperations(_Information__Attribute);
+			Fragments._Information__Information.initOperations(_Information__Information);
+			Fragments._Information__OclAny.initOperations(_Information__OclAny);
+			Fragments._Information__OclElement.initOperations(_Information__OclElement);
 
 			Fragments._Row__OclAny.initOperations(_Row__OclAny);
 			Fragments._Row__OclElement.initOperations(_Row__OclElement);
 			Fragments._Row__Row.initOperations(_Row__Row);
 
-			Fragments._Seccao__OclAny.initOperations(_Seccao__OclAny);
-			Fragments._Seccao__OclElement.initOperations(_Seccao__OclElement);
-			Fragments._Seccao__Seccao.initOperations(_Seccao__Seccao);
+			Fragments._Section__OclAny.initOperations(_Section__OclAny);
+			Fragments._Section__OclElement.initOperations(_Section__OclElement);
+			Fragments._Section__Section.initOperations(_Section__Section);
 
 			Fragments._StringType__OclAny.initOperations(_StringType__OclAny);
 			Fragments._StringType__OclElement.initOperations(_StringType__OclElement);
@@ -872,10 +870,10 @@ public class Projeto_CVTables extends AbstractTables
 			Fragments._SuperType__OclElement.initOperations(_SuperType__OclElement);
 			Fragments._SuperType__SuperType.initOperations(_SuperType__SuperType);
 
-			Fragments._Tabela__Atributo.initOperations(_Tabela__Atributo);
-			Fragments._Tabela__OclAny.initOperations(_Tabela__OclAny);
-			Fragments._Tabela__OclElement.initOperations(_Tabela__OclElement);
-			Fragments._Tabela__Tabela.initOperations(_Tabela__Tabela);
+			Fragments._Table__Attribute.initOperations(_Table__Attribute);
+			Fragments._Table__OclAny.initOperations(_Table__OclAny);
+			Fragments._Table__OclElement.initOperations(_Table__OclElement);
+			Fragments._Table__Table.initOperations(_Table__Table);
 
 			Init.initEnd();
 		}
@@ -895,49 +893,50 @@ public class Projeto_CVTables extends AbstractTables
 			FragmentOperations.init();
 		}
 
-		private static final ExecutorProperty /*@NonNull*/ [] _Atributo = {
-			OCLstdlibTables.Properties._OclElement__oclContainer,
-			OCLstdlibTables.Properties._OclElement__oclContents
-		};
-
-		private static final ExecutorProperty /*@NonNull*/ [] _Body = {
+		private static final ExecutorProperty /*@NonNull*/ [] _Attribute = {
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._Body__row
+			Projeto_CVTables.Properties._Attribute__titulo
+		};
+
+		private static final ExecutorProperty /*@NonNull*/ [] _BodyTable = {
+			OCLstdlibTables.Properties._OclElement__oclContainer,
+			OCLstdlibTables.Properties._OclElement__oclContents,
+			Projeto_CVTables.Properties._BodyTable__row
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _CV = {
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._CV__seccao
+			Projeto_CVTables.Properties._CV__sections,
+			Projeto_CVTables.Properties._CV__version
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _DataType = {
-			Projeto_CVTables.Properties._DataType__date,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._SuperType__supertype
+			Projeto_CVTables.Properties._SuperType__supertype,
+			Projeto_CVTables.Properties._DataType__value
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _FloatType = {
-			Projeto_CVTables.Properties._FloatType__flt,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._SuperType__supertype
+			Projeto_CVTables.Properties._SuperType__supertype,
+			Projeto_CVTables.Properties._FloatType__value
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _HeadTabela = {
-			Projeto_CVTables.Properties._HeadTabela__nome,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
 			Projeto_CVTables.Properties._HeadTabela__row
 		};
 
-		private static final ExecutorProperty /*@NonNull*/ [] _Informacao = {
+		private static final ExecutorProperty /*@NonNull*/ [] _Information = {
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._Informacao__supertype,
-			Projeto_CVTables.Properties._Informacao__titulo
+			Projeto_CVTables.Properties._Information__supertype,
+			Projeto_CVTables.Properties._Attribute__titulo
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _Row = {
@@ -946,19 +945,19 @@ public class Projeto_CVTables extends AbstractTables
 			Projeto_CVTables.Properties._Row__supertype
 		};
 
-		private static final ExecutorProperty /*@NonNull*/ [] _Seccao = {
-			Projeto_CVTables.Properties._Seccao__atributo,
-			Projeto_CVTables.Properties._Seccao__nome,
+		private static final ExecutorProperty /*@NonNull*/ [] _Section = {
+			Projeto_CVTables.Properties._Section__attributes,
+			Projeto_CVTables.Properties._Section__name,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._Seccao__seccao
+			Projeto_CVTables.Properties._Section__sections
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _StringType = {
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._StringType__str,
-			Projeto_CVTables.Properties._SuperType__supertype
+			Projeto_CVTables.Properties._SuperType__supertype,
+			Projeto_CVTables.Properties._StringType__value
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _SuperType = {
@@ -967,30 +966,30 @@ public class Projeto_CVTables extends AbstractTables
 			Projeto_CVTables.Properties._SuperType__supertype
 		};
 
-		private static final ExecutorProperty /*@NonNull*/ [] _Tabela = {
-			Projeto_CVTables.Properties._Tabela__body,
-			Projeto_CVTables.Properties._Tabela__header,
+		private static final ExecutorProperty /*@NonNull*/ [] _Table = {
+			Projeto_CVTables.Properties._Table__body,
+			Projeto_CVTables.Properties._Table__header,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
-			Projeto_CVTables.Properties._Tabela__titulo
+			Projeto_CVTables.Properties._Attribute__titulo
 		};
 
 		/**
 		 *	Install the property descriptors in the fragment descriptors.
 		 */
 		static {
-			Fragments._Atributo__Atributo.initProperties(_Atributo);
-			Fragments._Body__Body.initProperties(_Body);
+			Fragments._Attribute__Attribute.initProperties(_Attribute);
+			Fragments._BodyTable__BodyTable.initProperties(_BodyTable);
 			Fragments._CV__CV.initProperties(_CV);
 			Fragments._DataType__DataType.initProperties(_DataType);
 			Fragments._FloatType__FloatType.initProperties(_FloatType);
 			Fragments._HeadTabela__HeadTabela.initProperties(_HeadTabela);
-			Fragments._Informacao__Informacao.initProperties(_Informacao);
+			Fragments._Information__Information.initProperties(_Information);
 			Fragments._Row__Row.initProperties(_Row);
-			Fragments._Seccao__Seccao.initProperties(_Seccao);
+			Fragments._Section__Section.initProperties(_Section);
 			Fragments._StringType__StringType.initProperties(_StringType);
 			Fragments._SuperType__SuperType.initProperties(_SuperType);
-			Fragments._Tabela__Tabela.initProperties(_Tabela);
+			Fragments._Table__Table.initProperties(_Table);
 
 			Init.initEnd();
 		}
@@ -1079,7 +1078,7 @@ public class Projeto_CVTables extends AbstractTables
 	 * The EClasses whose instances should be cached to support allInstances().
 	 */
 	private static final EClass allInstancesEClasses /*@NonNull*/ [] = {
-		Projeto_CVPackage.Literals.SECCAO
+		Projeto_CVPackage.Literals.SECTION
 	};
 
 	@Override

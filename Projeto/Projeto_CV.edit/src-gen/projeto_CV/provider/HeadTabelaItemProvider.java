@@ -19,7 +19,6 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
@@ -56,26 +55,9 @@ public class HeadTabelaItemProvider extends ItemProviderAdapter implements IEdit
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNomePropertyDescriptor(object);
 			addRowPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Nome feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNomePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_HeadTabela_nome_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_HeadTabela_nome_feature",
-								"_UI_HeadTabela_type"),
-						Projeto_CVPackage.Literals.HEAD_TABELA__NOME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -152,9 +134,7 @@ public class HeadTabelaItemProvider extends ItemProviderAdapter implements IEdit
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((HeadTabela) object).getNome();
-		return label == null || label.length() == 0 ? getString("_UI_HeadTabela_type")
-				: getString("_UI_HeadTabela_type") + " " + label;
+		return getString("_UI_HeadTabela_type");
 	}
 
 	/**
@@ -169,9 +149,6 @@ public class HeadTabelaItemProvider extends ItemProviderAdapter implements IEdit
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(HeadTabela.class)) {
-		case Projeto_CVPackage.HEAD_TABELA__NOME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-			return;
 		case Projeto_CVPackage.HEAD_TABELA__ROW:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;

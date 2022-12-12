@@ -44,24 +44,24 @@ public class FloatTypeItemProvider extends SuperTypeItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addFltPropertyDescriptor(object);
+			addValuePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Flt feature.
+	 * This adds a property descriptor for the Value feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addFltPropertyDescriptor(Object object) {
+	protected void addValuePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_FloatType_flt_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_FloatType_flt_feature",
+						getResourceLocator(), getString("_UI_FloatType_value_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_FloatType_value_feature",
 								"_UI_FloatType_type"),
-						Projeto_CVPackage.Literals.FLOAT_TYPE__FLT, true, false, false,
+						Projeto_CVPackage.Literals.FLOAT_TYPE__VALUE, true, false, false,
 						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
@@ -95,7 +95,7 @@ public class FloatTypeItemProvider extends SuperTypeItemProvider {
 	@Override
 	public String getText(Object object) {
 		FloatType floatType = (FloatType) object;
-		return getString("_UI_FloatType_type") + " " + floatType.getFlt();
+		return getString("_UI_FloatType_type") + " " + floatType.getValue();
 	}
 
 	/**
@@ -110,7 +110,7 @@ public class FloatTypeItemProvider extends SuperTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(FloatType.class)) {
-		case Projeto_CVPackage.FLOAT_TYPE__FLT:
+		case Projeto_CVPackage.FLOAT_TYPE__VALUE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}

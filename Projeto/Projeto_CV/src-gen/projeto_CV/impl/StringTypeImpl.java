@@ -19,31 +19,31 @@ import projeto_CV.StringType;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.impl.StringTypeImpl#getStr <em>Str</em>}</li>
+ *   <li>{@link projeto_CV.impl.StringTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	/**
-	 * The default value of the '{@link #getStr() <em>Str</em>}' attribute.
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStr()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String STR_EDEFAULT = null;
+	protected static final String VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getStr() <em>Str</em>}' attribute.
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStr()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected String str = STR_EDEFAULT;
+	protected String value = VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -69,8 +69,8 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getStr() {
-		return str;
+	public String getValue() {
+		return value;
 	}
 
 	/**
@@ -78,11 +78,12 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStr(String newStr) {
-		String oldStr = str;
-		str = newStr;
+	public void setValue(String newValue) {
+		String oldValue = value;
+		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.STRING_TYPE__STR, oldStr, str));
+			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.STRING_TYPE__VALUE, oldValue,
+					value));
 	}
 
 	/**
@@ -93,8 +94,8 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case Projeto_CVPackage.STRING_TYPE__STR:
-			return getStr();
+		case Projeto_CVPackage.STRING_TYPE__VALUE:
+			return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +108,8 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case Projeto_CVPackage.STRING_TYPE__STR:
-			setStr((String) newValue);
+		case Projeto_CVPackage.STRING_TYPE__VALUE:
+			setValue((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +123,8 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.STRING_TYPE__STR:
-			setStr(STR_EDEFAULT);
+		case Projeto_CVPackage.STRING_TYPE__VALUE:
+			setValue(VALUE_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +138,8 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.STRING_TYPE__STR:
-			return STR_EDEFAULT == null ? str != null : !STR_EDEFAULT.equals(str);
+		case Projeto_CVPackage.STRING_TYPE__VALUE:
+			return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -154,8 +155,8 @@ public class StringTypeImpl extends SuperTypeImpl implements StringType {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (str: ");
-		result.append(str);
+		result.append(" (value: ");
+		result.append(value);
 		result.append(')');
 		return result.toString();
 	}

@@ -23,33 +23,12 @@ import projeto_CV.Row;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.impl.HeadTabelaImpl#getNome <em>Nome</em>}</li>
  *   <li>{@link projeto_CV.impl.HeadTabelaImpl#getRow <em>Row</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class HeadTabelaImpl extends MinimalEObjectImpl.Container implements HeadTabela {
-	/**
-	 * The default value of the '{@link #getNome() <em>Nome</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNome()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NOME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getNome() <em>Nome</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getNome()
-	 * @generated
-	 * @ordered
-	 */
-	protected String nome = NOME_EDEFAULT;
-
 	/**
 	 * The cached value of the '{@link #getRow() <em>Row</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -77,27 +56,6 @@ public class HeadTabelaImpl extends MinimalEObjectImpl.Container implements Head
 	@Override
 	protected EClass eStaticClass() {
 		return Projeto_CVPackage.Literals.HEAD_TABELA;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getNome() {
-		return nome;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setNome(String newNome) {
-		String oldNome = nome;
-		nome = newNome;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Projeto_CVPackage.HEAD_TABELA__NOME, oldNome, nome));
 	}
 
 	/**
@@ -171,8 +129,6 @@ public class HeadTabelaImpl extends MinimalEObjectImpl.Container implements Head
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case Projeto_CVPackage.HEAD_TABELA__NOME:
-			return getNome();
 		case Projeto_CVPackage.HEAD_TABELA__ROW:
 			return getRow();
 		}
@@ -187,9 +143,6 @@ public class HeadTabelaImpl extends MinimalEObjectImpl.Container implements Head
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case Projeto_CVPackage.HEAD_TABELA__NOME:
-			setNome((String) newValue);
-			return;
 		case Projeto_CVPackage.HEAD_TABELA__ROW:
 			setRow((Row) newValue);
 			return;
@@ -205,9 +158,6 @@ public class HeadTabelaImpl extends MinimalEObjectImpl.Container implements Head
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.HEAD_TABELA__NOME:
-			setNome(NOME_EDEFAULT);
-			return;
 		case Projeto_CVPackage.HEAD_TABELA__ROW:
 			setRow((Row) null);
 			return;
@@ -223,29 +173,10 @@ public class HeadTabelaImpl extends MinimalEObjectImpl.Container implements Head
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case Projeto_CVPackage.HEAD_TABELA__NOME:
-			return NOME_EDEFAULT == null ? nome != null : !NOME_EDEFAULT.equals(nome);
 		case Projeto_CVPackage.HEAD_TABELA__ROW:
 			return row != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (nome: ");
-		result.append(nome);
-		result.append(')');
-		return result.toString();
 	}
 
 } //HeadTabelaImpl

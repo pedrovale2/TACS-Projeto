@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
@@ -40,28 +39,20 @@ public class Projeto_CVValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "projeto_CV";
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Diff Name Section' of 'Seccao'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Diff Name Section' of 'Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SECCAO__DIFF_NAME_SECTION = 1;
+	public static final int SECTION__DIFF_NAME_SECTION = 1;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Same Size Rows' of 'Tabela'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Same Size Rows' of 'Table'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TABELA__SAME_SIZE_ROWS = 2;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Titulo Not Null' of 'Tabela'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int TABELA__TITULO_NOT_NULL = 3;
+	public static final int TABLE__SAME_SIZE_ROWS = 2;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -69,7 +60,7 @@ public class Projeto_CVValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 3;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 2;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -112,16 +103,16 @@ public class Projeto_CVValidator extends EObjectValidator {
 		switch (classifierID) {
 		case Projeto_CVPackage.CV:
 			return validateCV((CV) value, diagnostics, context);
-		case Projeto_CVPackage.SECCAO:
-			return validateSeccao((Seccao) value, diagnostics, context);
-		case Projeto_CVPackage.ATRIBUTO:
-			return validateAtributo((Atributo) value, diagnostics, context);
-		case Projeto_CVPackage.INFORMACAO:
-			return validateInformacao((Informacao) value, diagnostics, context);
-		case Projeto_CVPackage.TABELA:
-			return validateTabela((Tabela) value, diagnostics, context);
-		case Projeto_CVPackage.BODY:
-			return validateBody((Body) value, diagnostics, context);
+		case Projeto_CVPackage.SECTION:
+			return validateSection((Section) value, diagnostics, context);
+		case Projeto_CVPackage.ATTRIBUTE:
+			return validateAttribute((Attribute) value, diagnostics, context);
+		case Projeto_CVPackage.INFORMATION:
+			return validateInformation((Information) value, diagnostics, context);
+		case Projeto_CVPackage.TABLE:
+			return validateTable((Table) value, diagnostics, context);
+		case Projeto_CVPackage.BODY_TABLE:
+			return validateBodyTable((BodyTable) value, diagnostics, context);
 		case Projeto_CVPackage.DATA_TYPE:
 			return validateDataType((DataType) value, diagnostics, context);
 		case Projeto_CVPackage.STRING_TYPE:
@@ -153,38 +144,38 @@ public class Projeto_CVValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeccao(Seccao seccao, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(seccao, diagnostics, context))
+	public boolean validateSection(Section section, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(section, diagnostics, context))
 			return false;
-		boolean result = validate_EveryMultiplicityConforms(seccao, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryDataValueConforms(seccao, diagnostics, context);
+			result &= validate_EveryDataValueConforms(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryReferenceIsContained(seccao, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryBidirectionalReferenceIsPaired(seccao, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryProxyResolves(seccao, diagnostics, context);
+			result &= validate_EveryProxyResolves(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_UniqueID(seccao, diagnostics, context);
+			result &= validate_UniqueID(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryKeyUnique(seccao, diagnostics, context);
+			result &= validate_EveryKeyUnique(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryMapEntryUnique(seccao, diagnostics, context);
+			result &= validate_EveryMapEntryUnique(section, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validateSeccao_diffNameSection(seccao, diagnostics, context);
+			result &= validateSection_diffNameSection(section, diagnostics, context);
 		return result;
 	}
 
 	/**
-	 * Validates the diffNameSection constraint of '<em>Seccao</em>'.
+	 * Validates the diffNameSection constraint of '<em>Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeccao_diffNameSection(Seccao seccao, DiagnosticChain diagnostics,
+	public boolean validateSection_diffNameSection(Section section, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return seccao.diffNameSection(diagnostics, context);
+		return section.diffNameSection(diagnostics, context);
 	}
 
 	/**
@@ -192,8 +183,8 @@ public class Projeto_CVValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAtributo(Atributo atributo, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(atributo, diagnostics, context);
+	public boolean validateAttribute(Attribute attribute, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(attribute, diagnostics, context);
 	}
 
 	/**
@@ -201,8 +192,9 @@ public class Projeto_CVValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInformacao(Informacao informacao, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(informacao, diagnostics, context);
+	public boolean validateInformation(Information information, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(information, diagnostics, context);
 	}
 
 	/**
@@ -210,51 +202,37 @@ public class Projeto_CVValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTabela(Tabela tabela, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(tabela, diagnostics, context))
+	public boolean validateTable(Table table, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(table, diagnostics, context))
 			return false;
-		boolean result = validate_EveryMultiplicityConforms(tabela, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryDataValueConforms(tabela, diagnostics, context);
+			result &= validate_EveryDataValueConforms(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryReferenceIsContained(tabela, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryBidirectionalReferenceIsPaired(tabela, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryProxyResolves(tabela, diagnostics, context);
+			result &= validate_EveryProxyResolves(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_UniqueID(tabela, diagnostics, context);
+			result &= validate_UniqueID(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryKeyUnique(tabela, diagnostics, context);
+			result &= validate_EveryKeyUnique(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validate_EveryMapEntryUnique(tabela, diagnostics, context);
+			result &= validate_EveryMapEntryUnique(table, diagnostics, context);
 		if (result || diagnostics != null)
-			result &= validateTabela_tituloNotNull(tabela, diagnostics, context);
-		if (result || diagnostics != null)
-			result &= validateTabela_sameSizeRows(tabela, diagnostics, context);
+			result &= validateTable_sameSizeRows(table, diagnostics, context);
 		return result;
 	}
 
 	/**
-	 * Validates the tituloNotNull constraint of '<em>Tabela</em>'.
+	 * Validates the sameSizeRows constraint of '<em>Table</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTabela_tituloNotNull(Tabela tabela, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return tabela.tituloNotNull(diagnostics, context);
-	}
-
-	/**
-	 * Validates the sameSizeRows constraint of '<em>Tabela</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTabela_sameSizeRows(Tabela tabela, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return tabela.sameSizeRows(diagnostics, context);
+	public boolean validateTable_sameSizeRows(Table table, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return table.sameSizeRows(diagnostics, context);
 	}
 
 	/**
@@ -262,8 +240,8 @@ public class Projeto_CVValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBody(Body body, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(body, diagnostics, context);
+	public boolean validateBodyTable(BodyTable bodyTable, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(bodyTable, diagnostics, context);
 	}
 
 	/**

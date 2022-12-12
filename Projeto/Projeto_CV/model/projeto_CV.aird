@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_DoQv0EMdEe2h4_gPqFM5WQ" selectedViews="_D_HJkEMdEe2h4_gPqFM5WQ" version="15.0.0.202201261500">
+  <viewpoint:DAnalysis uid="_DoQv0EMdEe2h4_gPqFM5WQ" selectedViews="_D_HJkEMdEe2h4_gPqFM5WQ" version="15.0.0.202209061200">
     <semanticResources>projeto_CV.ecore</semanticResources>
     <semanticResources>projeto_CV.genmodel</semanticResources>
     <semanticResources>projeto_CV.ocl</semanticResources>
@@ -8,7 +8,7 @@
     <semanticResources>CV1.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_D_HJkEMdEe2h4_gPqFM5WQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ECspEEMdEe2h4_gPqFM5WQ" name="projeto_CV" repPath="#_EA4EIEMdEe2h4_gPqFM5WQ" changeId="0c42ff41-6e99-4f6e-84b2-ba12243a0dd2">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ECspEEMdEe2h4_gPqFM5WQ" name="projeto_CV" repPath="#_EA4EIEMdEe2h4_gPqFM5WQ" changeId="d3934d2d-4a33-4855-9a10-38e89e759f4c">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="projeto_CV.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -434,13 +434,13 @@
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_8_euYE4nEe2SFMqQsUaGvw" name="version : EFloat = 0.0" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="projeto_CV.ecore#//CV/version"/>
         <semanticElements xmi:type="ecore:EAttribute" href="projeto_CV.ecore#//CV/version"/>
-        <ownedStyle xmi:type="diagram:BundledImage" uid="_A0QnkE4oEe2SFMqQsUaGvw" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_8qMPUHojEe2xQNfk9SdFiw" labelAlignment="LEFT" description="_mkBEoEiaEe2cLa-xVus-Vg">
+          <labelFormat>bold</labelFormat>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_KM3FQEMdEe2h4_gPqFM5WQ" name="Section" tooltipText="&#xA;WARNING : The «invariant» 'projeto_CV::Section' is invalid: '&quot;Seccao.allInstances()->isUnique(nome)&quot;&#xA;&#x9;The 'CallExp::TypeIsNotInvalid' constraint is violated for 'org.eclipse.ocl.pivot.internal.OperationCallExpImpl@108d9764{platform:/resource/Projeto_CV/model/projeto_CV.ecore.oclas#//@ownedPackages.0/@ownedClasses.1/@ownedInvariants.0/@ownedSpecification/@ownedBody/@ownedSource/@ownedSource}'&#xA;&#x9;The 'VariableExp::TypeIsNotInvalid' constraint is violated for 'org.eclipse.ocl.pivot.internal.VariableExpImpl@1296fa15{platform:/resource/Projeto_CV/model/projeto_CV.ecore.oclas#//@ownedPackages.0/@ownedClasses.1/@ownedInvariants.0/@ownedSpecification/@ownedBody/@ownedBody/@ownedSource}'&#xA;&#x9;The 'VariableDeclaration::TypeIsNotInvalid' constraint is violated for 'org.eclipse.ocl.pivot.internal.IteratorVariableImpl@195ca91d{platform:/resource/Projeto_CV/model/projeto_CV.ecore.oclas#L3ETg}''&#xA;WARNING : The 'CallExp::TypeIsNotInvalid' constraint is violated for 'OperationCallExp{platform:/resource/Projeto_CV/model/projeto_CV.ecore.oclas#//@ownedPackages.0/@ownedClasses.1/@ownedInvariants.0/@ownedSpecification/@ownedBody/@ownedSource/@ownedSource}'&#xA;WARNING : The 'VariableExp::TypeIsNotInvalid' constraint is violated for 'VariableExp{platform:/resource/Projeto_CV/model/projeto_CV.ecore.oclas#//@ownedPackages.0/@ownedClasses.1/@ownedInvariants.0/@ownedSpecification/@ownedBody/@ownedBody/@ownedSource}'&#xA;WARNING : The 'VariableDeclaration::TypeIsNotInvalid' constraint is violated for 'IteratorVariable{platform:/resource/Projeto_CV/model/projeto_CV.ecore.oclas#L3ETg}'" outgoingEdges="_Cnp8gEMfEe2h4_gPqFM5WQ _ou6AZkMfEe24K-5SQqAFPg" incomingEdges="_Cnp8gEMfEe2h4_gPqFM5WQ _S3GmoUMfEe2h4_gPqFM5WQ" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_KM3FQEMdEe2h4_gPqFM5WQ" name="Section" tooltipText="" outgoingEdges="_Cnp8gEMfEe2h4_gPqFM5WQ _ou6AZkMfEe24K-5SQqAFPg" incomingEdges="_Cnp8gEMfEe2h4_gPqFM5WQ _S3GmoUMfEe2h4_gPqFM5WQ" width="12" height="10">
       <target xmi:type="ecore:EClass" href="projeto_CV.ecore#//Section"/>
       <semanticElements xmi:type="ecore:EClass" href="projeto_CV.ecore#//Section"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

@@ -69,13 +69,22 @@ public interface Projeto_CVPackage extends EPackage {
 	int CV = 0;
 
 	/**
-	 * The feature id for the '<em><b>Seccao</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Sections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CV__SECCAO = 0;
+	int CV__SECTIONS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Version</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CV__VERSION = 1;
 
 	/**
 	 * The number of structural features of the '<em>CV</em>' class.
@@ -84,7 +93,7 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CV_FEATURE_COUNT = 1;
+	int CV_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>CV</em>' class.
@@ -96,50 +105,50 @@ public interface Projeto_CVPackage extends EPackage {
 	int CV_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link projeto_CV.impl.SeccaoImpl <em>Seccao</em>}' class.
+	 * The meta object id for the '{@link projeto_CV.impl.SectionImpl <em>Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see projeto_CV.impl.SeccaoImpl
-	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getSeccao()
+	 * @see projeto_CV.impl.SectionImpl
+	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getSection()
 	 * @generated
 	 */
-	int SECCAO = 1;
+	int SECTION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Seccao</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Sections</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECCAO__SECCAO = 0;
+	int SECTION__SECTIONS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Nome</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECCAO__NOME = 1;
+	int SECTION__NAME = 1;
 
 	/**
-	 * The feature id for the '<em><b>Atributo</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECCAO__ATRIBUTO = 2;
+	int SECTION__ATTRIBUTES = 2;
 
 	/**
-	 * The number of structural features of the '<em>Seccao</em>' class.
+	 * The number of structural features of the '<em>Section</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECCAO_FEATURE_COUNT = 3;
+	int SECTION_FEATURE_COUNT = 3;
 
 	/**
 	 * The operation id for the '<em>Diff Name Section</em>' operation.
@@ -148,54 +157,26 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECCAO___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP = 0;
+	int SECTION___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP = 0;
 
 	/**
-	 * The number of operations of the '<em>Seccao</em>' class.
+	 * The number of operations of the '<em>Section</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECCAO_OPERATION_COUNT = 1;
+	int SECTION_OPERATION_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link projeto_CV.impl.AtributoImpl <em>Atributo</em>}' class.
+	 * The meta object id for the '{@link projeto_CV.impl.AttributeImpl <em>Attribute</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see projeto_CV.impl.AtributoImpl
-	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getAtributo()
+	 * @see projeto_CV.impl.AttributeImpl
+	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getAttribute()
 	 * @generated
 	 */
-	int ATRIBUTO = 2;
-
-	/**
-	 * The number of structural features of the '<em>Atributo</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATRIBUTO_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Atributo</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATRIBUTO_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link projeto_CV.impl.InformacaoImpl <em>Informacao</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see projeto_CV.impl.InformacaoImpl
-	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getInformacao()
-	 * @generated
-	 */
-	int INFORMACAO = 3;
+	int ATTRIBUTE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Titulo</b></em>' attribute.
@@ -204,7 +185,44 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFORMACAO__TITULO = ATRIBUTO_FEATURE_COUNT + 0;
+	int ATTRIBUTE__TITULO = 0;
+
+	/**
+	 * The number of structural features of the '<em>Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link projeto_CV.impl.InformationImpl <em>Information</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see projeto_CV.impl.InformationImpl
+	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getInformation()
+	 * @generated
+	 */
+	int INFORMATION = 3;
+
+	/**
+	 * The feature id for the '<em><b>Titulo</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INFORMATION__TITULO = ATTRIBUTE__TITULO;
 
 	/**
 	 * The feature id for the '<em><b>Supertype</b></em>' containment reference.
@@ -213,35 +231,35 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INFORMACAO__SUPERTYPE = ATRIBUTO_FEATURE_COUNT + 1;
+	int INFORMATION__SUPERTYPE = ATTRIBUTE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Informacao</em>' class.
+	 * The number of structural features of the '<em>Information</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INFORMACAO_FEATURE_COUNT = ATRIBUTO_FEATURE_COUNT + 2;
+	int INFORMATION_FEATURE_COUNT = ATTRIBUTE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Informacao</em>' class.
+	 * The number of operations of the '<em>Information</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INFORMACAO_OPERATION_COUNT = ATRIBUTO_OPERATION_COUNT + 0;
+	int INFORMATION_OPERATION_COUNT = ATTRIBUTE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link projeto_CV.impl.TabelaImpl <em>Tabela</em>}' class.
+	 * The meta object id for the '{@link projeto_CV.impl.TableImpl <em>Table</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see projeto_CV.impl.TabelaImpl
-	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getTabela()
+	 * @see projeto_CV.impl.TableImpl
+	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getTable()
 	 * @generated
 	 */
-	int TABELA = 4;
+	int TABLE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Titulo</b></em>' attribute.
@@ -250,7 +268,7 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TABELA__TITULO = ATRIBUTO_FEATURE_COUNT + 0;
+	int TABLE__TITULO = ATTRIBUTE__TITULO;
 
 	/**
 	 * The feature id for the '<em><b>Header</b></em>' containment reference.
@@ -259,7 +277,7 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TABELA__HEADER = ATRIBUTO_FEATURE_COUNT + 1;
+	int TABLE__HEADER = ATTRIBUTE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Body</b></em>' containment reference.
@@ -268,16 +286,16 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TABELA__BODY = ATRIBUTO_FEATURE_COUNT + 2;
+	int TABLE__BODY = ATTRIBUTE_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Tabela</em>' class.
+	 * The number of structural features of the '<em>Table</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TABELA_FEATURE_COUNT = ATRIBUTO_FEATURE_COUNT + 3;
+	int TABLE_FEATURE_COUNT = ATTRIBUTE_FEATURE_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Same Size Rows</em>' operation.
@@ -286,35 +304,26 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TABELA___SAME_SIZE_ROWS__DIAGNOSTICCHAIN_MAP = ATRIBUTO_OPERATION_COUNT + 0;
+	int TABLE___SAME_SIZE_ROWS__DIAGNOSTICCHAIN_MAP = ATTRIBUTE_OPERATION_COUNT + 0;
 
 	/**
-	 * The operation id for the '<em>Titulo Not Null</em>' operation.
+	 * The number of operations of the '<em>Table</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TABELA___TITULO_NOT_NULL__DIAGNOSTICCHAIN_MAP = ATRIBUTO_OPERATION_COUNT + 1;
+	int TABLE_OPERATION_COUNT = ATTRIBUTE_OPERATION_COUNT + 1;
 
 	/**
-	 * The number of operations of the '<em>Tabela</em>' class.
+	 * The meta object id for the '{@link projeto_CV.impl.BodyTableImpl <em>Body Table</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TABELA_OPERATION_COUNT = ATRIBUTO_OPERATION_COUNT + 2;
-
-	/**
-	 * The meta object id for the '{@link projeto_CV.impl.BodyImpl <em>Body</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see projeto_CV.impl.BodyImpl
-	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getBody()
+	 * @see projeto_CV.impl.BodyTableImpl
+	 * @see projeto_CV.impl.Projeto_CVPackageImpl#getBodyTable()
 	 * @generated
 	 */
-	int BODY = 5;
+	int BODY_TABLE = 5;
 
 	/**
 	 * The feature id for the '<em><b>Row</b></em>' containment reference list.
@@ -323,25 +332,25 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BODY__ROW = 0;
+	int BODY_TABLE__ROW = 0;
 
 	/**
-	 * The number of structural features of the '<em>Body</em>' class.
+	 * The number of structural features of the '<em>Body Table</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BODY_FEATURE_COUNT = 1;
+	int BODY_TABLE_FEATURE_COUNT = 1;
 
 	/**
-	 * The number of operations of the '<em>Body</em>' class.
+	 * The number of operations of the '<em>Body Table</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BODY_OPERATION_COUNT = 0;
+	int BODY_TABLE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link projeto_CV.impl.SuperTypeImpl <em>Super Type</em>}' class.
@@ -400,13 +409,13 @@ public interface Projeto_CVPackage extends EPackage {
 	int DATA_TYPE__SUPERTYPE = SUPER_TYPE__SUPERTYPE;
 
 	/**
-	 * The feature id for the '<em><b>Date</b></em>' attribute.
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TYPE__DATE = SUPER_TYPE_FEATURE_COUNT + 0;
+	int DATA_TYPE__VALUE = SUPER_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Data Type</em>' class.
@@ -446,13 +455,13 @@ public interface Projeto_CVPackage extends EPackage {
 	int STRING_TYPE__SUPERTYPE = SUPER_TYPE__SUPERTYPE;
 
 	/**
-	 * The feature id for the '<em><b>Str</b></em>' attribute.
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STRING_TYPE__STR = SUPER_TYPE_FEATURE_COUNT + 0;
+	int STRING_TYPE__VALUE = SUPER_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>String Type</em>' class.
@@ -492,13 +501,13 @@ public interface Projeto_CVPackage extends EPackage {
 	int FLOAT_TYPE__SUPERTYPE = SUPER_TYPE__SUPERTYPE;
 
 	/**
-	 * The feature id for the '<em><b>Flt</b></em>' attribute.
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOAT_TYPE__FLT = SUPER_TYPE_FEATURE_COUNT + 0;
+	int FLOAT_TYPE__VALUE = SUPER_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Float Type</em>' class.
@@ -529,22 +538,13 @@ public interface Projeto_CVPackage extends EPackage {
 	int HEAD_TABELA = 9;
 
 	/**
-	 * The feature id for the '<em><b>Nome</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEAD_TABELA__NOME = 0;
-
-	/**
 	 * The feature id for the '<em><b>Row</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HEAD_TABELA__ROW = 1;
+	int HEAD_TABELA__ROW = 0;
 
 	/**
 	 * The number of structural features of the '<em>Head Tabela</em>' class.
@@ -553,7 +553,7 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HEAD_TABELA_FEATURE_COUNT = 2;
+	int HEAD_TABELA_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Head Tabela</em>' class.
@@ -612,194 +612,184 @@ public interface Projeto_CVPackage extends EPackage {
 	EClass getCV();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link projeto_CV.CV#getSeccao <em>Seccao</em>}'.
+	 * Returns the meta object for the containment reference list '{@link projeto_CV.CV#getSections <em>Sections</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Seccao</em>'.
-	 * @see projeto_CV.CV#getSeccao()
+	 * @return the meta object for the containment reference list '<em>Sections</em>'.
+	 * @see projeto_CV.CV#getSections()
 	 * @see #getCV()
 	 * @generated
 	 */
-	EReference getCV_Seccao();
+	EReference getCV_Sections();
 
 	/**
-	 * Returns the meta object for class '{@link projeto_CV.Seccao <em>Seccao</em>}'.
+	 * Returns the meta object for the attribute '{@link projeto_CV.CV#getVersion <em>Version</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Seccao</em>'.
-	 * @see projeto_CV.Seccao
+	 * @return the meta object for the attribute '<em>Version</em>'.
+	 * @see projeto_CV.CV#getVersion()
+	 * @see #getCV()
 	 * @generated
 	 */
-	EClass getSeccao();
+	EAttribute getCV_Version();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link projeto_CV.Seccao#getSeccao <em>Seccao</em>}'.
+	 * Returns the meta object for class '{@link projeto_CV.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Seccao</em>'.
-	 * @see projeto_CV.Seccao#getSeccao()
-	 * @see #getSeccao()
+	 * @return the meta object for class '<em>Section</em>'.
+	 * @see projeto_CV.Section
 	 * @generated
 	 */
-	EReference getSeccao_Seccao();
+	EClass getSection();
 
 	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.Seccao#getNome <em>Nome</em>}'.
+	 * Returns the meta object for the containment reference list '{@link projeto_CV.Section#getSections <em>Sections</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Nome</em>'.
-	 * @see projeto_CV.Seccao#getNome()
-	 * @see #getSeccao()
+	 * @return the meta object for the containment reference list '<em>Sections</em>'.
+	 * @see projeto_CV.Section#getSections()
+	 * @see #getSection()
 	 * @generated
 	 */
-	EAttribute getSeccao_Nome();
+	EReference getSection_Sections();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link projeto_CV.Seccao#getAtributo <em>Atributo</em>}'.
+	 * Returns the meta object for the attribute '{@link projeto_CV.Section#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Atributo</em>'.
-	 * @see projeto_CV.Seccao#getAtributo()
-	 * @see #getSeccao()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see projeto_CV.Section#getName()
+	 * @see #getSection()
 	 * @generated
 	 */
-	EReference getSeccao_Atributo();
+	EAttribute getSection_Name();
 
 	/**
-	 * Returns the meta object for the '{@link projeto_CV.Seccao#diffNameSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Diff Name Section</em>}' operation.
+	 * Returns the meta object for the containment reference list '{@link projeto_CV.Section#getAttributes <em>Attributes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Attributes</em>'.
+	 * @see projeto_CV.Section#getAttributes()
+	 * @see #getSection()
+	 * @generated
+	 */
+	EReference getSection_Attributes();
+
+	/**
+	 * Returns the meta object for the '{@link projeto_CV.Section#diffNameSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Diff Name Section</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Diff Name Section</em>' operation.
-	 * @see projeto_CV.Seccao#diffNameSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see projeto_CV.Section#diffNameSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 */
-	EOperation getSeccao__DiffNameSection__DiagnosticChain_Map();
+	EOperation getSection__DiffNameSection__DiagnosticChain_Map();
 
 	/**
-	 * Returns the meta object for class '{@link projeto_CV.Atributo <em>Atributo</em>}'.
+	 * Returns the meta object for class '{@link projeto_CV.Attribute <em>Attribute</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Atributo</em>'.
-	 * @see projeto_CV.Atributo
+	 * @return the meta object for class '<em>Attribute</em>'.
+	 * @see projeto_CV.Attribute
 	 * @generated
 	 */
-	EClass getAtributo();
+	EClass getAttribute();
 
 	/**
-	 * Returns the meta object for class '{@link projeto_CV.Informacao <em>Informacao</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Informacao</em>'.
-	 * @see projeto_CV.Informacao
-	 * @generated
-	 */
-	EClass getInformacao();
-
-	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.Informacao#getTitulo <em>Titulo</em>}'.
+	 * Returns the meta object for the attribute '{@link projeto_CV.Attribute#getTitulo <em>Titulo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Titulo</em>'.
-	 * @see projeto_CV.Informacao#getTitulo()
-	 * @see #getInformacao()
+	 * @see projeto_CV.Attribute#getTitulo()
+	 * @see #getAttribute()
 	 * @generated
 	 */
-	EAttribute getInformacao_Titulo();
+	EAttribute getAttribute_Titulo();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link projeto_CV.Informacao#getSupertype <em>Supertype</em>}'.
+	 * Returns the meta object for class '{@link projeto_CV.Information <em>Information</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Information</em>'.
+	 * @see projeto_CV.Information
+	 * @generated
+	 */
+	EClass getInformation();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link projeto_CV.Information#getSupertype <em>Supertype</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Supertype</em>'.
-	 * @see projeto_CV.Informacao#getSupertype()
-	 * @see #getInformacao()
+	 * @see projeto_CV.Information#getSupertype()
+	 * @see #getInformation()
 	 * @generated
 	 */
-	EReference getInformacao_Supertype();
+	EReference getInformation_Supertype();
 
 	/**
-	 * Returns the meta object for class '{@link projeto_CV.Tabela <em>Tabela</em>}'.
+	 * Returns the meta object for class '{@link projeto_CV.Table <em>Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Tabela</em>'.
-	 * @see projeto_CV.Tabela
+	 * @return the meta object for class '<em>Table</em>'.
+	 * @see projeto_CV.Table
 	 * @generated
 	 */
-	EClass getTabela();
+	EClass getTable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.Tabela#getTitulo <em>Titulo</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Titulo</em>'.
-	 * @see projeto_CV.Tabela#getTitulo()
-	 * @see #getTabela()
-	 * @generated
-	 */
-	EAttribute getTabela_Titulo();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link projeto_CV.Tabela#getHeader <em>Header</em>}'.
+	 * Returns the meta object for the containment reference '{@link projeto_CV.Table#getHeader <em>Header</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Header</em>'.
-	 * @see projeto_CV.Tabela#getHeader()
-	 * @see #getTabela()
+	 * @see projeto_CV.Table#getHeader()
+	 * @see #getTable()
 	 * @generated
 	 */
-	EReference getTabela_Header();
+	EReference getTable_Header();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link projeto_CV.Tabela#getBody <em>Body</em>}'.
+	 * Returns the meta object for the containment reference '{@link projeto_CV.Table#getBody <em>Body</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Body</em>'.
-	 * @see projeto_CV.Tabela#getBody()
-	 * @see #getTabela()
+	 * @see projeto_CV.Table#getBody()
+	 * @see #getTable()
 	 * @generated
 	 */
-	EReference getTabela_Body();
+	EReference getTable_Body();
 
 	/**
-	 * Returns the meta object for the '{@link projeto_CV.Tabela#sameSizeRows(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Same Size Rows</em>}' operation.
+	 * Returns the meta object for the '{@link projeto_CV.Table#sameSizeRows(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Same Size Rows</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Same Size Rows</em>' operation.
-	 * @see projeto_CV.Tabela#sameSizeRows(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see projeto_CV.Table#sameSizeRows(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 */
-	EOperation getTabela__SameSizeRows__DiagnosticChain_Map();
+	EOperation getTable__SameSizeRows__DiagnosticChain_Map();
 
 	/**
-	 * Returns the meta object for the '{@link projeto_CV.Tabela#tituloNotNull(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Titulo Not Null</em>}' operation.
+	 * Returns the meta object for class '{@link projeto_CV.BodyTable <em>Body Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Titulo Not Null</em>' operation.
-	 * @see projeto_CV.Tabela#tituloNotNull(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @return the meta object for class '<em>Body Table</em>'.
+	 * @see projeto_CV.BodyTable
 	 * @generated
 	 */
-	EOperation getTabela__TituloNotNull__DiagnosticChain_Map();
+	EClass getBodyTable();
 
 	/**
-	 * Returns the meta object for class '{@link projeto_CV.Body <em>Body</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Body</em>'.
-	 * @see projeto_CV.Body
-	 * @generated
-	 */
-	EClass getBody();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link projeto_CV.Body#getRow <em>Row</em>}'.
+	 * Returns the meta object for the containment reference list '{@link projeto_CV.BodyTable#getRow <em>Row</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Row</em>'.
-	 * @see projeto_CV.Body#getRow()
-	 * @see #getBody()
+	 * @see projeto_CV.BodyTable#getRow()
+	 * @see #getBodyTable()
 	 * @generated
 	 */
-	EReference getBody_Row();
+	EReference getBodyTable_Row();
 
 	/**
 	 * Returns the meta object for class '{@link projeto_CV.DataType <em>Data Type</em>}'.
@@ -812,15 +802,15 @@ public interface Projeto_CVPackage extends EPackage {
 	EClass getDataType();
 
 	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.DataType#getDate <em>Date</em>}'.
+	 * Returns the meta object for the attribute '{@link projeto_CV.DataType#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Date</em>'.
-	 * @see projeto_CV.DataType#getDate()
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see projeto_CV.DataType#getValue()
 	 * @see #getDataType()
 	 * @generated
 	 */
-	EAttribute getDataType_Date();
+	EAttribute getDataType_Value();
 
 	/**
 	 * Returns the meta object for class '{@link projeto_CV.StringType <em>String Type</em>}'.
@@ -833,15 +823,15 @@ public interface Projeto_CVPackage extends EPackage {
 	EClass getStringType();
 
 	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.StringType#getStr <em>Str</em>}'.
+	 * Returns the meta object for the attribute '{@link projeto_CV.StringType#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Str</em>'.
-	 * @see projeto_CV.StringType#getStr()
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see projeto_CV.StringType#getValue()
 	 * @see #getStringType()
 	 * @generated
 	 */
-	EAttribute getStringType_Str();
+	EAttribute getStringType_Value();
 
 	/**
 	 * Returns the meta object for class '{@link projeto_CV.FloatType <em>Float Type</em>}'.
@@ -854,15 +844,15 @@ public interface Projeto_CVPackage extends EPackage {
 	EClass getFloatType();
 
 	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.FloatType#getFlt <em>Flt</em>}'.
+	 * Returns the meta object for the attribute '{@link projeto_CV.FloatType#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Flt</em>'.
-	 * @see projeto_CV.FloatType#getFlt()
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see projeto_CV.FloatType#getValue()
 	 * @see #getFloatType()
 	 * @generated
 	 */
-	EAttribute getFloatType_Flt();
+	EAttribute getFloatType_Value();
 
 	/**
 	 * Returns the meta object for class '{@link projeto_CV.HeadTabela <em>Head Tabela</em>}'.
@@ -873,17 +863,6 @@ public interface Projeto_CVPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getHeadTabela();
-
-	/**
-	 * Returns the meta object for the attribute '{@link projeto_CV.HeadTabela#getNome <em>Nome</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Nome</em>'.
-	 * @see projeto_CV.HeadTabela#getNome()
-	 * @see #getHeadTabela()
-	 * @generated
-	 */
-	EAttribute getHeadTabela_Nome();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link projeto_CV.HeadTabela#getRow <em>Row</em>}'.
@@ -972,46 +951,54 @@ public interface Projeto_CVPackage extends EPackage {
 		EClass CV = eINSTANCE.getCV();
 
 		/**
-		 * The meta object literal for the '<em><b>Seccao</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Sections</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CV__SECCAO = eINSTANCE.getCV_Seccao();
+		EReference CV__SECTIONS = eINSTANCE.getCV_Sections();
 
 		/**
-		 * The meta object literal for the '{@link projeto_CV.impl.SeccaoImpl <em>Seccao</em>}' class.
+		 * The meta object literal for the '<em><b>Version</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see projeto_CV.impl.SeccaoImpl
-		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getSeccao()
 		 * @generated
 		 */
-		EClass SECCAO = eINSTANCE.getSeccao();
+		EAttribute CV__VERSION = eINSTANCE.getCV_Version();
 
 		/**
-		 * The meta object literal for the '<em><b>Seccao</b></em>' containment reference list feature.
+		 * The meta object literal for the '{@link projeto_CV.impl.SectionImpl <em>Section</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see projeto_CV.impl.SectionImpl
+		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getSection()
 		 * @generated
 		 */
-		EReference SECCAO__SECCAO = eINSTANCE.getSeccao_Seccao();
+		EClass SECTION = eINSTANCE.getSection();
 
 		/**
-		 * The meta object literal for the '<em><b>Nome</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Sections</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SECCAO__NOME = eINSTANCE.getSeccao_Nome();
+		EReference SECTION__SECTIONS = eINSTANCE.getSection_Sections();
 
 		/**
-		 * The meta object literal for the '<em><b>Atributo</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SECCAO__ATRIBUTO = eINSTANCE.getSeccao_Atributo();
+		EAttribute SECTION__NAME = eINSTANCE.getSection_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Attributes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SECTION__ATTRIBUTES = eINSTANCE.getSection_Attributes();
 
 		/**
 		 * The meta object literal for the '<em><b>Diff Name Section</b></em>' operation.
@@ -1019,28 +1006,18 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SECCAO___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP = eINSTANCE
-				.getSeccao__DiffNameSection__DiagnosticChain_Map();
+		EOperation SECTION___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP = eINSTANCE
+				.getSection__DiffNameSection__DiagnosticChain_Map();
 
 		/**
-		 * The meta object literal for the '{@link projeto_CV.impl.AtributoImpl <em>Atributo</em>}' class.
+		 * The meta object literal for the '{@link projeto_CV.impl.AttributeImpl <em>Attribute</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see projeto_CV.impl.AtributoImpl
-		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getAtributo()
+		 * @see projeto_CV.impl.AttributeImpl
+		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getAttribute()
 		 * @generated
 		 */
-		EClass ATRIBUTO = eINSTANCE.getAtributo();
-
-		/**
-		 * The meta object literal for the '{@link projeto_CV.impl.InformacaoImpl <em>Informacao</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see projeto_CV.impl.InformacaoImpl
-		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getInformacao()
-		 * @generated
-		 */
-		EClass INFORMACAO = eINSTANCE.getInformacao();
+		EClass ATTRIBUTE = eINSTANCE.getAttribute();
 
 		/**
 		 * The meta object literal for the '<em><b>Titulo</b></em>' attribute feature.
@@ -1048,7 +1025,17 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INFORMACAO__TITULO = eINSTANCE.getInformacao_Titulo();
+		EAttribute ATTRIBUTE__TITULO = eINSTANCE.getAttribute_Titulo();
+
+		/**
+		 * The meta object literal for the '{@link projeto_CV.impl.InformationImpl <em>Information</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see projeto_CV.impl.InformationImpl
+		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getInformation()
+		 * @generated
+		 */
+		EClass INFORMATION = eINSTANCE.getInformation();
 
 		/**
 		 * The meta object literal for the '<em><b>Supertype</b></em>' containment reference feature.
@@ -1056,25 +1043,17 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference INFORMACAO__SUPERTYPE = eINSTANCE.getInformacao_Supertype();
+		EReference INFORMATION__SUPERTYPE = eINSTANCE.getInformation_Supertype();
 
 		/**
-		 * The meta object literal for the '{@link projeto_CV.impl.TabelaImpl <em>Tabela</em>}' class.
+		 * The meta object literal for the '{@link projeto_CV.impl.TableImpl <em>Table</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see projeto_CV.impl.TabelaImpl
-		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getTabela()
+		 * @see projeto_CV.impl.TableImpl
+		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getTable()
 		 * @generated
 		 */
-		EClass TABELA = eINSTANCE.getTabela();
-
-		/**
-		 * The meta object literal for the '<em><b>Titulo</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute TABELA__TITULO = eINSTANCE.getTabela_Titulo();
+		EClass TABLE = eINSTANCE.getTable();
 
 		/**
 		 * The meta object literal for the '<em><b>Header</b></em>' containment reference feature.
@@ -1082,7 +1061,7 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TABELA__HEADER = eINSTANCE.getTabela_Header();
+		EReference TABLE__HEADER = eINSTANCE.getTable_Header();
 
 		/**
 		 * The meta object literal for the '<em><b>Body</b></em>' containment reference feature.
@@ -1090,7 +1069,7 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TABELA__BODY = eINSTANCE.getTabela_Body();
+		EReference TABLE__BODY = eINSTANCE.getTable_Body();
 
 		/**
 		 * The meta object literal for the '<em><b>Same Size Rows</b></em>' operation.
@@ -1098,27 +1077,18 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation TABELA___SAME_SIZE_ROWS__DIAGNOSTICCHAIN_MAP = eINSTANCE
-				.getTabela__SameSizeRows__DiagnosticChain_Map();
+		EOperation TABLE___SAME_SIZE_ROWS__DIAGNOSTICCHAIN_MAP = eINSTANCE
+				.getTable__SameSizeRows__DiagnosticChain_Map();
 
 		/**
-		 * The meta object literal for the '<em><b>Titulo Not Null</b></em>' operation.
+		 * The meta object literal for the '{@link projeto_CV.impl.BodyTableImpl <em>Body Table</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see projeto_CV.impl.BodyTableImpl
+		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getBodyTable()
 		 * @generated
 		 */
-		EOperation TABELA___TITULO_NOT_NULL__DIAGNOSTICCHAIN_MAP = eINSTANCE
-				.getTabela__TituloNotNull__DiagnosticChain_Map();
-
-		/**
-		 * The meta object literal for the '{@link projeto_CV.impl.BodyImpl <em>Body</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see projeto_CV.impl.BodyImpl
-		 * @see projeto_CV.impl.Projeto_CVPackageImpl#getBody()
-		 * @generated
-		 */
-		EClass BODY = eINSTANCE.getBody();
+		EClass BODY_TABLE = eINSTANCE.getBodyTable();
 
 		/**
 		 * The meta object literal for the '<em><b>Row</b></em>' containment reference list feature.
@@ -1126,7 +1096,7 @@ public interface Projeto_CVPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference BODY__ROW = eINSTANCE.getBody_Row();
+		EReference BODY_TABLE__ROW = eINSTANCE.getBodyTable_Row();
 
 		/**
 		 * The meta object literal for the '{@link projeto_CV.impl.DataTypeImpl <em>Data Type</em>}' class.
@@ -1139,12 +1109,12 @@ public interface Projeto_CVPackage extends EPackage {
 		EClass DATA_TYPE = eINSTANCE.getDataType();
 
 		/**
-		 * The meta object literal for the '<em><b>Date</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute DATA_TYPE__DATE = eINSTANCE.getDataType_Date();
+		EAttribute DATA_TYPE__VALUE = eINSTANCE.getDataType_Value();
 
 		/**
 		 * The meta object literal for the '{@link projeto_CV.impl.StringTypeImpl <em>String Type</em>}' class.
@@ -1157,12 +1127,12 @@ public interface Projeto_CVPackage extends EPackage {
 		EClass STRING_TYPE = eINSTANCE.getStringType();
 
 		/**
-		 * The meta object literal for the '<em><b>Str</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute STRING_TYPE__STR = eINSTANCE.getStringType_Str();
+		EAttribute STRING_TYPE__VALUE = eINSTANCE.getStringType_Value();
 
 		/**
 		 * The meta object literal for the '{@link projeto_CV.impl.FloatTypeImpl <em>Float Type</em>}' class.
@@ -1175,12 +1145,12 @@ public interface Projeto_CVPackage extends EPackage {
 		EClass FLOAT_TYPE = eINSTANCE.getFloatType();
 
 		/**
-		 * The meta object literal for the '<em><b>Flt</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute FLOAT_TYPE__FLT = eINSTANCE.getFloatType_Flt();
+		EAttribute FLOAT_TYPE__VALUE = eINSTANCE.getFloatType_Value();
 
 		/**
 		 * The meta object literal for the '{@link projeto_CV.impl.HeadTabelaImpl <em>Head Tabela</em>}' class.
@@ -1191,14 +1161,6 @@ public interface Projeto_CVPackage extends EPackage {
 		 * @generated
 		 */
 		EClass HEAD_TABELA = eINSTANCE.getHeadTabela();
-
-		/**
-		 * The meta object literal for the '<em><b>Nome</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute HEAD_TABELA__NOME = eINSTANCE.getHeadTabela_Nome();
 
 		/**
 		 * The meta object literal for the '<em><b>Row</b></em>' containment reference feature.

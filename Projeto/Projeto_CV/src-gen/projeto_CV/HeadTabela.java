@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link projeto_CV.HeadTabela#getNome <em>Nome</em>}</li>
  *   <li>{@link projeto_CV.HeadTabela#getRow <em>Row</em>}</li>
  * </ul>
  *
@@ -22,28 +21,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface HeadTabela extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Nome</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Nome</em>' attribute.
-	 * @see #setNome(String)
-	 * @see projeto_CV.Projeto_CVPackage#getHeadTabela_Nome()
-	 * @model
-	 * @generated
-	 */
-	String getNome();
-
-	/**
-	 * Sets the value of the '{@link projeto_CV.HeadTabela#getNome <em>Nome</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nome</em>' attribute.
-	 * @see #getNome()
-	 * @generated
-	 */
-	void setNome(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Row</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

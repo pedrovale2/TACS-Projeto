@@ -44,24 +44,24 @@ public class StringTypeItemProvider extends SuperTypeItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addStrPropertyDescriptor(object);
+			addValuePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Str feature.
+	 * This adds a property descriptor for the Value feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addStrPropertyDescriptor(Object object) {
+	protected void addValuePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
 				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_StringType_str_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_StringType_str_feature",
+						getResourceLocator(), getString("_UI_StringType_value_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_StringType_value_feature",
 								"_UI_StringType_type"),
-						Projeto_CVPackage.Literals.STRING_TYPE__STR, true, false, false,
+						Projeto_CVPackage.Literals.STRING_TYPE__VALUE, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
@@ -94,7 +94,7 @@ public class StringTypeItemProvider extends SuperTypeItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((StringType) object).getStr();
+		String label = ((StringType) object).getValue();
 		return label == null || label.length() == 0 ? getString("_UI_StringType_type")
 				: getString("_UI_StringType_type") + " " + label;
 	}
@@ -111,7 +111,7 @@ public class StringTypeItemProvider extends SuperTypeItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(StringType.class)) {
-		case Projeto_CVPackage.STRING_TYPE__STR:
+		case Projeto_CVPackage.STRING_TYPE__VALUE:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		}
