@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="curriculo" version="12.0.0.2017041100">
+  <ownedViewpoints name="curriculoelements" modelFileExtension="">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="cv" domainClass="curriculo::CV" enablePopupBars="true">
+      <metamodel href="http://www.example.org/curriculo#/"/>
+      <defaultLayer name="Default">
+        <containerMappings name="section" domainClass="curriculo::Section" childrenPresentation="VerticalStack">
+          <subContainerMappings name="Information" semanticCandidatesExpression="aql:self.attributes" domainClass="curriculo::Information" childrenPresentation="List">
+            <subNodeMappings name="FloatType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::FloatType">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="DataType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::DataType">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>italic</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="StringType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::StringType">
+              <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="feature:title" widthComputationExpression="40" backgroundStyle="Liquid">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="Table" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::Table" childrenPresentation="VerticalStack">
+            <subContainerMappings name="header" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::HeadTable" childrenPresentation="VerticalStack">
+              <subContainerMappings name="RowsBody" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::Row" childrenPresentation="List">
+                <subNodeMappings name="StringType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::StringType">
+                  <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                  </style>
+                </subNodeMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="Row" widthComputationExpression="40">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="Header" widthComputationExpression="40">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <subContainerMappings name="body" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::BodyTable" childrenPresentation="VerticalStack">
+              <subContainerMappings name="RowsBody" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::Row" childrenPresentation="List">
+                <subNodeMappings name="DataType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::DataType">
+                  <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                  </style>
+                </subNodeMappings>
+                <subNodeMappings name="StringType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::StringType">
+                  <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                  </style>
+                </subNodeMappings>
+                <subNodeMappings name="FloatType" semanticCandidatesExpression="feature:eAllContents" domainClass="curriculo::FloatType">
+                  <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                  </style>
+                </subNodeMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="Row" widthComputationExpression="40">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="Body" widthComputationExpression="40">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelFormat>bold</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="feature:title" widthComputationExpression="40">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              <labelBorderStyle href="environment:/viewpoint#//@labelBorderStyles/@labelBorderStyleDescriptions.0"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" arcWidth="100" borderSizeComputationExpression="1" labelSize="12" widthComputationExpression="40">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="InformationCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::Information" referenceName="attributes">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="feature:title"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name=" CreateDataType" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='DataType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::DataType" referenceName="supertype">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name=" CreateFloatType" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='FloatType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::FloatType" referenceName="supertype">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name=" CreateStringType" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='StringType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::StringType" referenceName="supertype">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="TableCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::Table" referenceName="attributes">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="title" valueExpression="feature:title"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="HeaderCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='header']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::HeadTable" referenceName="header">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="headrow" valueExpression="feature:headrow"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="BodyCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='body']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::BodyTable" referenceName="body">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="bodyrow"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="RowCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='body']/@subContainerMappings[name='RowsBody']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::Row" referenceName="bodyrow">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="rowvalues" valueExpression="feature:rowvalues"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name=" CreateStringTypeRows" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='body']/@subContainerMappings[name='RowsBody']/@subNodeMappings[name='StringType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::StringType" referenceName="rowvalues">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name=" CreateDataTypeRows" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='body']/@subContainerMappings[name='RowsBody']/@subNodeMappings[name='DataType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::DataType" referenceName="rowvalues">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateFloatTypeRows" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='body']/@subContainerMappings[name='RowsBody']/@subNodeMappings[name='FloatType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::FloatType" referenceName="rowvalues">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="SectionCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::Section" referenceName="sections">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="feature:name"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="HeaderRowCreation" containerMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='header']/@subContainerMappings[name='RowsBody']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::Row" referenceName="headrow">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="rowvalues"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="StringHeaderCreation" nodeMappings="//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Table']/@subContainerMappings[name='header']/@subContainerMappings[name='RowsBody']/@subNodeMappings[name='StringType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="curriculo::StringType" referenceName="rowvalues">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="feature:value"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

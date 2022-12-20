@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated curriculo -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="curriculo.presentation.CurriculoModelWizardID"
+            name="%_UI_CurriculoModelWizard_label"
+            class="curriculo.presentation.CurriculoModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CurriculoModelFile.gif">
+         <description>%_UI_CurriculoModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated curriculo -->
+      <editor
+            id="curriculo.presentation.CurriculoEditorID"
+            name="%_UI_CurriculoEditor_label"
+            icon="icons/full/obj16/CurriculoModelFile.gif"
+            extensions="curriculo"
+            class="curriculo.presentation.CurriculoEditor"
+            contributorClass="curriculo.presentation.CurriculoActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
