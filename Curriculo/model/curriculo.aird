@@ -5,7 +5,7 @@
     <semanticResources>curriculo.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_f2ftUH-8Ee269ojZHNDMRQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_f6HpEH-8Ee269ojZHNDMRQ" name="curriculo" repPath="#_f4tT0H-8Ee269ojZHNDMRQ" changeId="3f290b62-21fc-4802-82d0-5b475ab6008e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_f6HpEH-8Ee269ojZHNDMRQ" name="curriculo" repPath="#_f4tT0H-8Ee269ojZHNDMRQ" changeId="234dc6ca-0379-42c5-a0c0-62a833c69c7d">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="curriculo.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -162,22 +162,6 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NJ1H83--Ee269ojZHNDMRQ" points="[0, 0, 1, -124]$[0, 124, 1, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NJ1vBn--Ee269ojZHNDMRQ" id="(0.4067796610169492,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NJ1vB3--Ee269ojZHNDMRQ" id="(0.5,0.0)"/>
-        </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_QShXMH--Ee269ojZHNDMRQ" type="4001" element="_QSdFwH--Ee269ojZHNDMRQ" source="_DlUEwH--Ee269ojZHNDMRQ" target="_DlUEwH--Ee269ojZHNDMRQ">
-          <children xmi:type="notation:Node" xmi:id="_QSh-QH--Ee269ojZHNDMRQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QSh-QX--Ee269ojZHNDMRQ" x="3" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_QSh-Qn--Ee269ojZHNDMRQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QSh-Q3--Ee269ojZHNDMRQ" x="31" y="-12"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_QSh-RH--Ee269ojZHNDMRQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QSh-RX--Ee269ojZHNDMRQ" x="15" y="-10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QShXMX--Ee269ojZHNDMRQ" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_QShXMn--Ee269ojZHNDMRQ" fontColor="7490599" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QShXM3--Ee269ojZHNDMRQ" points="[0, -24, -24, -50]$[-84, -24, -108, -50]$[-84, 66, -108, 40]$[59, 66, 35, 40]$[59, 26, 35, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QSjMYH--Ee269ojZHNDMRQ" id="(0.0,0.7346938775510204)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QSjMYX--Ee269ojZHNDMRQ" id="(0.2033898305084746,1.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_hWt4AH--Ee269ojZHNDMRQ" type="4001" element="_hWpmkH--Ee269ojZHNDMRQ" source="_DlUEwH--Ee269ojZHNDMRQ" target="_bC8z4H--Ee269ojZHNDMRQ">
           <children xmi:type="notation:Node" xmi:id="_hWufEH--Ee269ojZHNDMRQ" type="6001">
@@ -437,7 +421,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DlQaYH--Ee269ojZHNDMRQ" name="Section" tooltipText="" outgoingEdges="_QSdFwH--Ee269ojZHNDMRQ _hWpmkH--Ee269ojZHNDMRQ" incomingEdges="_NJw2gH--Ee269ojZHNDMRQ _QSdFwH--Ee269ojZHNDMRQ" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DlQaYH--Ee269ojZHNDMRQ" name="Section" tooltipText="" outgoingEdges="_hWpmkH--Ee269ojZHNDMRQ" incomingEdges="_NJw2gH--Ee269ojZHNDMRQ" width="12" height="10">
       <target xmi:type="ecore:EClass" href="curriculo.ecore#//Section"/>
       <semanticElements xmi:type="ecore:EClass" href="curriculo.ecore#//Section"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -464,19 +448,6 @@
           <customFeatures>labelSize</customFeatures>
         </centerLabelStyle>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_NJxdlH--Ee269ojZHNDMRQ" showIcon="false" labelColor="39,76,114">
-          <customFeatures>labelSize</customFeatures>
-        </endLabelStyle>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QSdFwH--Ee269ojZHNDMRQ" name="[0..*] subsections" sourceNode="_DlQaYH--Ee269ojZHNDMRQ" targetNode="_DlQaYH--Ee269ojZHNDMRQ">
-      <target xmi:type="ecore:EReference" href="curriculo.ecore#//Section/subsections"/>
-      <semanticElements xmi:type="ecore:EReference" href="curriculo.ecore#//Section/subsections"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QSdFwX--Ee269ojZHNDMRQ" description="_NJxdkH--Ee269ojZHNDMRQ" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QSdFw3--Ee269ojZHNDMRQ" showIcon="false">
-          <customFeatures>labelSize</customFeatures>
-        </centerLabelStyle>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_QSdFwn--Ee269ojZHNDMRQ" showIcon="false" labelColor="39,76,114">
           <customFeatures>labelSize</customFeatures>
         </endLabelStyle>
       </ownedStyle>

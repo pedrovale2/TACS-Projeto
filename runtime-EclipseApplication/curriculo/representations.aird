@@ -19,7 +19,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='Curriculo']"/>
         <target xmi:type="curriculo:CV" href="My.curriculo#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3pAtMn_xEe2-X-7M8CcQHg" name="new cv" repPath="#_3pAtMH_xEe2-X-7M8CcQHg" changeId="1011f7a9-b556-41c8-8137-6ed1890b70fa">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_3pAtMn_xEe2-X-7M8CcQHg" name="new cv" repPath="#_3pAtMH_xEe2-X-7M8CcQHg" changeId="66855cf8-60c9-421a-a6f9-6f12ce979fe9">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']"/>
         <target xmi:type="curriculo:CV" href="My.curriculo#/"/>
       </ownedRepresentationDescriptors>
@@ -460,7 +460,7 @@
                 <styles xmi:type="notation:DrawerStyle" xmi:id="_qRqcJ3_yEe2-X-7M8CcQHg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_qRqcIX_yEe2-X-7M8CcQHg" fontName="Segoe UI" fontHeight="12" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qRqcIn_yEe2-X-7M8CcQHg" y="40"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qRqcIn_yEe2-X-7M8CcQHg" y="107"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_jsnI0H_0Ee2-X-7M8CcQHg" type="3009" element="_jslToH_0Ee2-X-7M8CcQHg">
               <children xmi:type="notation:Node" xmi:id="_jsnI03_0Ee2-X-7M8CcQHg" type="5004"/>
@@ -475,6 +475,20 @@
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_jsnI0X_0Ee2-X-7M8CcQHg" fontName="Segoe UI" fontHeight="12" bold="true"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jsnI0n_0Ee2-X-7M8CcQHg" width="533"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_8s2oQH_2Ee272Ia2_rW76w" type="3009" element="_8shREH_2Ee272Ia2_rW76w">
+              <children xmi:type="notation:Node" xmi:id="_8s8u4H_2Ee272Ia2_rW76w" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_8s9V8H_2Ee272Ia2_rW76w" type="7003">
+                <children xmi:type="notation:Node" xmi:id="__BMpcH_2Ee272Ia2_rW76w" type="3010" element="__BEtoH_2Ee272Ia2_rW76w">
+                  <styles xmi:type="notation:FontStyle" xmi:id="__BMpcX_2Ee272Ia2_rW76w" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="__BMpcn_2Ee272Ia2_rW76w"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_8s9V8X_2Ee272Ia2_rW76w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_8s9V8n_2Ee272Ia2_rW76w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_8s9V83_2Ee272Ia2_rW76w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_8s2oQX_2Ee272Ia2_rW76w" fontName="Segoe UI" fontHeight="12" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8s2oQn_2Ee272Ia2_rW76w" y="67" width="533"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_nFSmwn_yEe2-X-7M8CcQHg"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_nFSmw3_yEe2-X-7M8CcQHg"/>
@@ -658,6 +672,23 @@
             <description xmi:type="style:SquareDescription" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='StringType']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='StringType']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_8shREH_2Ee272Ia2_rW76w" name="ola" width="40">
+        <target xmi:type="curriculo:Information" href="My.curriculo#//@sections.1/@attributes.2"/>
+        <semanticElements xmi:type="curriculo:Information" href="My.curriculo#//@sections.1/@attributes.2"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_8sh4IH_2Ee272Ia2_rW76w" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" backgroundColor="194,239,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="__BEtoH_2Ee272Ia2_rW76w" name="123.0">
+          <target xmi:type="curriculo:FloatType" href="My.curriculo#//@sections.1/@attributes.2/@supertype"/>
+          <semanticElements xmi:type="curriculo:FloatType" href="My.curriculo#//@sections.1/@attributes.2/@supertype"/>
+          <ownedStyle xmi:type="diagram:Square" uid="__BEtoX_2Ee272Ia2_rW76w" labelSize="12" labelAlignment="LEFT" labelPosition="node" color="204,242,166">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='FloatType']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/currisulo.design/description/currisulo.odesign#//@ownedViewpoints[name='curriculoelements']/@ownedRepresentations[name='cv']/@defaultLayer/@containerMappings[name='section']/@subContainerMappings[name='Information']/@subNodeMappings[name='FloatType']"/>
         </ownedElements>
       </ownedDiagramElements>
     </ownedDiagramElements>

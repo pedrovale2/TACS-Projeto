@@ -240,17 +240,8 @@ public class CurriculoPackageImpl extends EPackageImpl implements CurriculoPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSection_Subsections() {
-		return (EReference) sectionEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getSection_Attributes() {
-		return (EReference) sectionEClass.getEStructuralFeatures().get(2);
+		return (EReference) sectionEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -495,7 +486,6 @@ public class CurriculoPackageImpl extends EPackageImpl implements CurriculoPacka
 
 		sectionEClass = createEClass(SECTION);
 		createEAttribute(sectionEClass, SECTION__NAME);
-		createEReference(sectionEClass, SECTION__SUBSECTIONS);
 		createEReference(sectionEClass, SECTION__ATTRIBUTES);
 		createEOperation(sectionEClass, SECTION___DIFF_NAME_SECTION__DIAGNOSTICCHAIN_MAP);
 
@@ -578,9 +568,6 @@ public class CurriculoPackageImpl extends EPackageImpl implements CurriculoPacka
 		initEClass(sectionEClass, Section.class, "Section", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSection_Name(), ecorePackage.getEString(), "name", null, 0, 1, Section.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSection_Subsections(), this.getSection(), null, "subsections", null, 0, -1, Section.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSection_Attributes(), this.getAttribute(), null, "attributes", null, 0, -1, Section.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

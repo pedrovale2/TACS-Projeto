@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link curriculo.Section#getName <em>Name</em>}</li>
- *   <li>{@link curriculo.Section#getSubsections <em>Subsections</em>}</li>
  *   <li>{@link curriculo.Section#getAttributes <em>Attributes</em>}</li>
  * </ul>
  *
@@ -49,18 +48,6 @@ public interface Section extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Subsections</b></em>' containment reference list.
-	 * The list contents are of type {@link curriculo.Section}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subsections</em>' containment reference list.
-	 * @see curriculo.CurriculoPackage#getSection_Subsections()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Section> getSubsections();
 
 	/**
 	 * Returns the value of the '<em><b>Attributes</b></em>' containment reference list.

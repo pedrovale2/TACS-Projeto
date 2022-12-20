@@ -30,5 +30,8 @@
     <attributes xsi:type="curriculo:Information" title="Infoasdda">
       <supertype xsi:type="curriculo:StringType" value="qwewqeqwe"/>
     </attributes>
+    <attributes xsi:type="curriculo:Information" title="ola">
+      <supertype xsi:type="curriculo:FloatType" value="123.0"/>
+    </attributes>
   </sections>
 </curriculo:CV>

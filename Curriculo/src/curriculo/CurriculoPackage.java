@@ -124,22 +124,13 @@ public interface CurriculoPackage extends EPackage {
 	int SECTION__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Subsections</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SECTION__SUBSECTIONS = 1;
-
-	/**
 	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECTION__ATTRIBUTES = 2;
+	int SECTION__ATTRIBUTES = 1;
 
 	/**
 	 * The number of structural features of the '<em>Section</em>' class.
@@ -148,7 +139,7 @@ public interface CurriculoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECTION_FEATURE_COUNT = 3;
+	int SECTION_FEATURE_COUNT = 2;
 
 	/**
 	 * The operation id for the '<em>Diff Name Section</em>' operation.
@@ -655,17 +646,6 @@ public interface CurriculoPackage extends EPackage {
 	EAttribute getSection_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link curriculo.Section#getSubsections <em>Subsections</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Subsections</em>'.
-	 * @see curriculo.Section#getSubsections()
-	 * @see #getSection()
-	 * @generated
-	 */
-	EReference getSection_Subsections();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link curriculo.Section#getAttributes <em>Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -983,14 +963,6 @@ public interface CurriculoPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SECTION__NAME = eINSTANCE.getSection_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Subsections</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SECTION__SUBSECTIONS = eINSTANCE.getSection_Subsections();
 
 		/**
 		 * The meta object literal for the '<em><b>Attributes</b></em>' containment reference list feature.

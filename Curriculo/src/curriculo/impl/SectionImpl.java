@@ -57,7 +57,6 @@ import org.eclipse.ocl.pivot.values.SetValue.Accumulator;
  * </p>
  * <ul>
  *   <li>{@link curriculo.impl.SectionImpl#getName <em>Name</em>}</li>
- *   <li>{@link curriculo.impl.SectionImpl#getSubsections <em>Subsections</em>}</li>
  *   <li>{@link curriculo.impl.SectionImpl#getAttributes <em>Attributes</em>}</li>
  * </ul>
  *
@@ -83,16 +82,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getSubsections() <em>Subsections</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSubsections()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Section> subsections;
 
 	/**
 	 * The cached value of the '{@link #getAttributes() <em>Attributes</em>}' containment reference list.
@@ -142,19 +131,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 		name = newName;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CurriculoPackage.SECTION__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Section> getSubsections() {
-		if (subsections == null) {
-			subsections = new EObjectContainmentEList<Section>(Section.class, this,
-					CurriculoPackage.SECTION__SUBSECTIONS);
-		}
-		return subsections;
 	}
 
 	/**
@@ -253,8 +229,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case CurriculoPackage.SECTION__SUBSECTIONS:
-			return ((InternalEList<?>) getSubsections()).basicRemove(otherEnd, msgs);
 		case CurriculoPackage.SECTION__ATTRIBUTES:
 			return ((InternalEList<?>) getAttributes()).basicRemove(otherEnd, msgs);
 		}
@@ -271,8 +245,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 		switch (featureID) {
 		case CurriculoPackage.SECTION__NAME:
 			return getName();
-		case CurriculoPackage.SECTION__SUBSECTIONS:
-			return getSubsections();
 		case CurriculoPackage.SECTION__ATTRIBUTES:
 			return getAttributes();
 		}
@@ -290,10 +262,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 		switch (featureID) {
 		case CurriculoPackage.SECTION__NAME:
 			setName((String) newValue);
-			return;
-		case CurriculoPackage.SECTION__SUBSECTIONS:
-			getSubsections().clear();
-			getSubsections().addAll((Collection<? extends Section>) newValue);
 			return;
 		case CurriculoPackage.SECTION__ATTRIBUTES:
 			getAttributes().clear();
@@ -314,9 +282,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 		case CurriculoPackage.SECTION__NAME:
 			setName(NAME_EDEFAULT);
 			return;
-		case CurriculoPackage.SECTION__SUBSECTIONS:
-			getSubsections().clear();
-			return;
 		case CurriculoPackage.SECTION__ATTRIBUTES:
 			getAttributes().clear();
 			return;
@@ -334,8 +299,6 @@ public class SectionImpl extends MinimalEObjectImpl.Container implements Section
 		switch (featureID) {
 		case CurriculoPackage.SECTION__NAME:
 			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-		case CurriculoPackage.SECTION__SUBSECTIONS:
-			return subsections != null && !subsections.isEmpty();
 		case CurriculoPackage.SECTION__ATTRIBUTES:
 			return attributes != null && !attributes.isEmpty();
 		}

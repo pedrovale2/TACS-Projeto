@@ -88,7 +88,6 @@ public class SectionItemProvider extends ItemProviderAdapter implements IEditing
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(CurriculoPackage.Literals.SECTION__SUBSECTIONS);
 			childrenFeatures.add(CurriculoPackage.Literals.SECTION__ATTRIBUTES);
 		}
 		return childrenFeatures;
@@ -156,7 +155,6 @@ public class SectionItemProvider extends ItemProviderAdapter implements IEditing
 		case CurriculoPackage.SECTION__NAME:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
-		case CurriculoPackage.SECTION__SUBSECTIONS:
 		case CurriculoPackage.SECTION__ATTRIBUTES:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 			return;
@@ -174,9 +172,6 @@ public class SectionItemProvider extends ItemProviderAdapter implements IEditing
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add(createChildParameter(CurriculoPackage.Literals.SECTION__SUBSECTIONS,
-				CurriculoFactory.eINSTANCE.createSection()));
 
 		newChildDescriptors.add(createChildParameter(CurriculoPackage.Literals.SECTION__ATTRIBUTES,
 				CurriculoFactory.eINSTANCE.createAttribute()));

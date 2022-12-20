@@ -309,9 +309,7 @@ public class CurriculoTables extends AbstractTables
 
 		public static final ExecutorProperty _Section__attributes = new EcoreExecutorProperty(CurriculoPackage.Literals.SECTION__ATTRIBUTES, Types._Section, 0);
 		public static final ExecutorProperty _Section__name = new EcoreExecutorProperty(CurriculoPackage.Literals.SECTION__NAME, Types._Section, 1);
-		public static final ExecutorProperty _Section__subsections = new EcoreExecutorProperty(CurriculoPackage.Literals.SECTION__SUBSECTIONS, Types._Section, 2);
-		public static final ExecutorProperty _Section__CV__sections = new ExecutorPropertyWithImplementation("CV", Types._Section, 3, new EcoreLibraryOppositeProperty(CurriculoPackage.Literals.CV__SECTIONS));
-		public static final ExecutorProperty _Section__Section__subsections = new ExecutorPropertyWithImplementation("Section", Types._Section, 4, new EcoreLibraryOppositeProperty(CurriculoPackage.Literals.SECTION__SUBSECTIONS));
+		public static final ExecutorProperty _Section__CV__sections = new ExecutorPropertyWithImplementation("CV", Types._Section, 2, new EcoreLibraryOppositeProperty(CurriculoPackage.Literals.CV__SECTIONS));
 
 		public static final ExecutorProperty _StringType__value = new EcoreExecutorProperty(CurriculoPackage.Literals.STRING_TYPE__VALUE, Types._StringType, 0);
 
@@ -949,8 +947,7 @@ public class CurriculoTables extends AbstractTables
 			CurriculoTables.Properties._Section__attributes,
 			CurriculoTables.Properties._Section__name,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
-			OCLstdlibTables.Properties._OclElement__oclContents,
-			CurriculoTables.Properties._Section__subsections
+			OCLstdlibTables.Properties._OclElement__oclContents
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _StringType = {

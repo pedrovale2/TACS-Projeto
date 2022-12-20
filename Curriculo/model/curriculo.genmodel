@@ -15,7 +15,6 @@
     </genClasses>
     <genClasses ecoreClass="curriculo.ecore#//Section">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute curriculo.ecore#//Section/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference curriculo.ecore#//Section/subsections"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference curriculo.ecore#//Section/attributes"/>
     </genClasses>
     <genClasses ecoreClass="curriculo.ecore#//Attribute">
