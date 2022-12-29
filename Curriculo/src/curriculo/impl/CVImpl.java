@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link curriculo.impl.CVImpl#getVersion <em>Version</em>}</li>
  *   <li>{@link curriculo.impl.CVImpl#getSections <em>Sections</em>}</li>
+ *   <li>{@link curriculo.impl.CVImpl#getAuthor <em>Author</em>}</li>
  * </ul>
  *
  * @generated
@@ -45,7 +46,7 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final float VERSION_EDEFAULT = 0.0F;
+	protected static final String VERSION_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
@@ -55,7 +56,7 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	 * @generated
 	 * @ordered
 	 */
-	protected float version = VERSION_EDEFAULT;
+	protected String version = VERSION_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getSections() <em>Sections</em>}' containment reference list.
@@ -66,6 +67,26 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	 * @ordered
 	 */
 	protected EList<Section> sections;
+
+	/**
+	 * The default value of the '{@link #getAuthor() <em>Author</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthor()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String AUTHOR_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAuthor() <em>Author</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthor()
+	 * @generated
+	 * @ordered
+	 */
+	protected String author = AUTHOR_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,7 +112,7 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public float getVersion() {
+	public String getVersion() {
 		return version;
 	}
 
@@ -100,8 +121,8 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setVersion(float newVersion) {
-		float oldVersion = version;
+	public void setVersion(String newVersion) {
+		String oldVersion = version;
 		version = newVersion;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, CurriculoPackage.CV__VERSION, oldVersion, version));
@@ -117,6 +138,27 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 			sections = new EObjectContainmentEList<Section>(Section.class, this, CurriculoPackage.CV__SECTIONS);
 		}
 		return sections;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAuthor() {
+		return author;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAuthor(String newAuthor) {
+		String oldAuthor = author;
+		author = newAuthor;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CurriculoPackage.CV__AUTHOR, oldAuthor, author));
 	}
 
 	/**
@@ -145,6 +187,8 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 			return getVersion();
 		case CurriculoPackage.CV__SECTIONS:
 			return getSections();
+		case CurriculoPackage.CV__AUTHOR:
+			return getAuthor();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -159,11 +203,14 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case CurriculoPackage.CV__VERSION:
-			setVersion((Float) newValue);
+			setVersion((String) newValue);
 			return;
 		case CurriculoPackage.CV__SECTIONS:
 			getSections().clear();
 			getSections().addAll((Collection<? extends Section>) newValue);
+			return;
+		case CurriculoPackage.CV__AUTHOR:
+			setAuthor((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -183,6 +230,9 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 		case CurriculoPackage.CV__SECTIONS:
 			getSections().clear();
 			return;
+		case CurriculoPackage.CV__AUTHOR:
+			setAuthor(AUTHOR_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -196,9 +246,11 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case CurriculoPackage.CV__VERSION:
-			return version != VERSION_EDEFAULT;
+			return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
 		case CurriculoPackage.CV__SECTIONS:
 			return sections != null && !sections.isEmpty();
+		case CurriculoPackage.CV__AUTHOR:
+			return AUTHOR_EDEFAULT == null ? author != null : !AUTHOR_EDEFAULT.equals(author);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -216,6 +268,8 @@ public class CVImpl extends MinimalEObjectImpl.Container implements CV {
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (version: ");
 		result.append(version);
+		result.append(", author: ");
+		result.append(author);
 		result.append(')');
 		return result.toString();
 	}

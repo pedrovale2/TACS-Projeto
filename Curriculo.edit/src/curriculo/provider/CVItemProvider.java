@@ -57,6 +57,7 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 			super.getPropertyDescriptors(object);
 
 			addVersionPropertyDescriptor(object);
+			addAuthorPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -73,7 +74,22 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 						getResourceLocator(), getString("_UI_CV_version_feature"),
 						getString("_UI_PropertyDescriptor_description", "_UI_CV_version_feature", "_UI_CV_type"),
 						CurriculoPackage.Literals.CV__VERSION, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Author feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addAuthorPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_CV_author_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_CV_author_feature", "_UI_CV_type"),
+						CurriculoPackage.Literals.CV__AUTHOR, true, false, false,
+						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -135,8 +151,8 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 	 */
 	@Override
 	public String getText(Object object) {
-		CV cv = (CV) object;
-		return getString("_UI_CV_type") + " " + cv.getVersion();
+		String label = ((CV) object).getVersion();
+		return label == null || label.length() == 0 ? getString("_UI_CV_type") : getString("_UI_CV_type") + " " + label;
 	}
 
 	/**
@@ -152,6 +168,7 @@ public class CVItemProvider extends ItemProviderAdapter implements IEditingDomai
 
 		switch (notification.getFeatureID(CV.class)) {
 		case CurriculoPackage.CV__VERSION:
+		case CurriculoPackage.CV__AUTHOR:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case CurriculoPackage.CV__SECTIONS:

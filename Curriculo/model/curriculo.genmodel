@@ -12,6 +12,7 @@
     <genClasses ecoreClass="curriculo.ecore#//CV">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute curriculo.ecore#//CV/version"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference curriculo.ecore#//CV/sections"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute curriculo.ecore#//CV/author"/>
     </genClasses>
     <genClasses ecoreClass="curriculo.ecore#//Section">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute curriculo.ecore#//Section/name"/>

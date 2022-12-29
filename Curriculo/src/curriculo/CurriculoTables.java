@@ -291,8 +291,9 @@ public class CurriculoTables extends AbstractTables
 		public static final ExecutorProperty _BodyTable__bodyrow = new EcoreExecutorProperty(CurriculoPackage.Literals.BODY_TABLE__BODYROW, Types._BodyTable, 0);
 		public static final ExecutorProperty _BodyTable__Table__body = new ExecutorPropertyWithImplementation("Table", Types._BodyTable, 1, new EcoreLibraryOppositeProperty(CurriculoPackage.Literals.TABLE__BODY));
 
-		public static final ExecutorProperty _CV__sections = new EcoreExecutorProperty(CurriculoPackage.Literals.CV__SECTIONS, Types._CV, 0);
-		public static final ExecutorProperty _CV__version = new EcoreExecutorProperty(CurriculoPackage.Literals.CV__VERSION, Types._CV, 1);
+		public static final ExecutorProperty _CV__author = new EcoreExecutorProperty(CurriculoPackage.Literals.CV__AUTHOR, Types._CV, 0);
+		public static final ExecutorProperty _CV__sections = new EcoreExecutorProperty(CurriculoPackage.Literals.CV__SECTIONS, Types._CV, 1);
+		public static final ExecutorProperty _CV__version = new EcoreExecutorProperty(CurriculoPackage.Literals.CV__VERSION, Types._CV, 2);
 
 		public static final ExecutorProperty _DataType__value = new EcoreExecutorProperty(CurriculoPackage.Literals.DATA_TYPE__VALUE, Types._DataType, 0);
 
@@ -904,6 +905,7 @@ public class CurriculoTables extends AbstractTables
 		};
 
 		private static final ExecutorProperty /*@NonNull*/ [] _CV = {
+			CurriculoTables.Properties._CV__author,
 			OCLstdlibTables.Properties._OclElement__oclContainer,
 			OCLstdlibTables.Properties._OclElement__oclContents,
 			CurriculoTables.Properties._CV__sections,

@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link curriculo.CV#getVersion <em>Version</em>}</li>
  *   <li>{@link curriculo.CV#getSections <em>Sections</em>}</li>
+ *   <li>{@link curriculo.CV#getAuthor <em>Author</em>}</li>
  * </ul>
  *
  * @see curriculo.CurriculoPackage#getCV()
@@ -29,12 +30,12 @@ public interface CV extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Version</em>' attribute.
-	 * @see #setVersion(float)
+	 * @see #setVersion(String)
 	 * @see curriculo.CurriculoPackage#getCV_Version()
 	 * @model required="true"
 	 * @generated
 	 */
-	float getVersion();
+	String getVersion();
 
 	/**
 	 * Sets the value of the '{@link curriculo.CV#getVersion <em>Version</em>}' attribute.
@@ -44,7 +45,7 @@ public interface CV extends EObject {
 	 * @see #getVersion()
 	 * @generated
 	 */
-	void setVersion(float value);
+	void setVersion(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Sections</b></em>' containment reference list.
@@ -57,5 +58,27 @@ public interface CV extends EObject {
 	 * @generated
 	 */
 	EList<Section> getSections();
+
+	/**
+	 * Returns the value of the '<em><b>Author</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Author</em>' attribute.
+	 * @see #setAuthor(String)
+	 * @see curriculo.CurriculoPackage#getCV_Author()
+	 * @model
+	 * @generated
+	 */
+	String getAuthor();
+
+	/**
+	 * Sets the value of the '{@link curriculo.CV#getAuthor <em>Author</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Author</em>' attribute.
+	 * @see #getAuthor()
+	 * @generated
+	 */
+	void setAuthor(String value);
 
 } // CV

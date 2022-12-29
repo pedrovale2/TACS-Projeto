@@ -87,13 +87,22 @@ public interface CurriculoPackage extends EPackage {
 	int CV__SECTIONS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Author</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CV__AUTHOR = 2;
+
+	/**
 	 * The number of structural features of the '<em>CV</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CV_FEATURE_COUNT = 2;
+	int CV_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>CV</em>' class.
@@ -625,6 +634,17 @@ public interface CurriculoPackage extends EPackage {
 	EReference getCV_Sections();
 
 	/**
+	 * Returns the meta object for the attribute '{@link curriculo.CV#getAuthor <em>Author</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Author</em>'.
+	 * @see curriculo.CV#getAuthor()
+	 * @see #getCV()
+	 * @generated
+	 */
+	EAttribute getCV_Author();
+
+	/**
 	 * Returns the meta object for class '{@link curriculo.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -945,6 +965,14 @@ public interface CurriculoPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CV__SECTIONS = eINSTANCE.getCV_Sections();
+
+		/**
+		 * The meta object literal for the '<em><b>Author</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CV__AUTHOR = eINSTANCE.getCV_Author();
 
 		/**
 		 * The meta object literal for the '{@link curriculo.impl.SectionImpl <em>Section</em>}' class.

@@ -222,6 +222,15 @@ public class CurriculoPackageImpl extends EPackageImpl implements CurriculoPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getCV_Author() {
+		return (EAttribute) cvEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSection() {
 		return sectionEClass;
 	}
@@ -483,6 +492,7 @@ public class CurriculoPackageImpl extends EPackageImpl implements CurriculoPacka
 		cvEClass = createEClass(CV);
 		createEAttribute(cvEClass, CV__VERSION);
 		createEReference(cvEClass, CV__SECTIONS);
+		createEAttribute(cvEClass, CV__AUTHOR);
 
 		sectionEClass = createEClass(SECTION);
 		createEAttribute(sectionEClass, SECTION__NAME);
@@ -559,11 +569,13 @@ public class CurriculoPackageImpl extends EPackageImpl implements CurriculoPacka
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(cvEClass, curriculo.CV.class, "CV", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCV_Version(), ecorePackage.getEFloat(), "version", null, 1, 1, curriculo.CV.class,
+		initEAttribute(getCV_Version(), ecorePackage.getEString(), "version", null, 1, 1, curriculo.CV.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCV_Sections(), this.getSection(), null, "sections", null, 0, -1, curriculo.CV.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCV_Author(), ecorePackage.getEString(), "author", null, 0, 1, curriculo.CV.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(sectionEClass, Section.class, "Section", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSection_Name(), ecorePackage.getEString(), "name", null, 0, 1, Section.class, !IS_TRANSIENT,
